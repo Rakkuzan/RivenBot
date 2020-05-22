@@ -1,12 +1,15 @@
+from BotFunctions import rmkt2sem, rmkt2semWep, isStatCorrect, isModCorrect
 import re
 from datetime import timedelta
 from time import sleep, time
 from playsound import playsound
-from BotFunctions import rmkt2sem, rmkt2semWep, isStatCorrect, isModCorrect
 from bs4 import BeautifulSoup
 from selenium import webdriver
+from selenium.webdriver.common.by import By
+from selenium.webdriver.support.wait import WebDriverWait
 from selenium.webdriver.common.keys import Keys
 from selenium.webdriver.support.ui import Select
+from selenium.webdriver.support import expected_conditions as ec
 import csv
 
 start_time = time()
@@ -18,19 +21,19 @@ weapons = [
            # "Corinth",
            # "Redeemer",
            # "Kohm",
-           #"Gram",
-           #"Opticor",      #uncommon
-           #"Kronen",
-           #"Catchmoon",
-           #"Nukor",
-           #"Kuva Chakkhurr",
-           #"Amprex",       #uncommon
-           #"Shedu",
-           #"Acceltra",
-           #"Lenz",         #uncommon
-           #"Dread",        #uncommon
+           # "Gram",
+           # "Opticor",      # uncommon
+           # "Kronen",
+           # "Catchmoon",
+           # "Nukor",
+           # "Kuva Chakkhurr",
+           # "Amprex",       # uncommon
+           # "Shedu",
+           # "Acceltra",
+           # "Lenz",         # uncommon
+           # "Dread",        # uncommon
            "Plague Kripath",
-           #"Basmu"]        #uncommon
+           "Basmu"           # uncommon
            ]
 
 # writing to .csv
@@ -65,10 +68,17 @@ for weapon in weapons:
     Select(rmkt_driver.find_element_by_id("list_recency")).select_by_value("7")  # <7 days
     Select(rmkt_driver.find_element_by_id("list_weapon")).select_by_visible_text(weapon)  # Weapon
     rmkt_driver.execute_script("loadList(1,'price','ASC')")  # price ascending
-    sleep(2)
 
-    rmkt_soup = BeautifulSoup(rmkt_driver.page_source, "lxml")
+    # TODO: Zrobic zeby to gnojstwo dzialalo
+    # WebDriverWait(rmkt_driver, 10).until(ec.presence_of_element_located((By.TAG_NAME, "center")))
+    while True:
+        rmkt_soup = BeautifulSoup(rmkt_driver.page_source, "lxml")
+        loading = rmkt_soup.find_all("center")
+        sleep(0.05)
+        if not loading:
+            break
     rmkt_list = rmkt_soup.find_all("div", class_="riven")
+
     for list_el in rmkt_list:
         wepid = list_el["id"]
         wepname = rmkt2semWep(list_el["data-weapon"])
@@ -81,7 +91,7 @@ for weapon in weapons:
         stat3, error3 = rmkt2sem(list_el["data-stat3"], weptype, wepname)
         stat4, error4 = rmkt2sem(list_el["data-stat4"], weptype, wepname)
 
-        cont = False;
+        cont = False
         for error in [error1, error2, error3, error4]:
             if error != "":
                 cont = True
@@ -100,7 +110,7 @@ for weapon in weapons:
             if stat != "":
                 statc = statc + 1
         cond2 = (list_el["data-age"] == "new" or list_el["data-age"] == "> 1 day")
-        cond3 = isModCorrect(stat1, stat2, stat3, stat4, weptype, statc)
+        cond3 = isModCorrect(stat1, stat2, stat3, stat4, statc)
 
         if cond1 and cond2 and cond3:
             # Semlar weaponname
@@ -124,15 +134,13 @@ for weapon in weapons:
             semlar_debuffs.send_keys(stat4)
             semlar_debuffs.send_keys(Keys.ENTER)
             semlar_cmp.click()
-            sleep(0.1)
+            sleep(0.1)  # TODO lepsze czekanie
             # write to csv
             semlar_soup = BeautifulSoup(semlar_driver.page_source, "lxml")
-            rating = semlar_soup.find_all("h1", attrs={"style": re.compile("color: rgb\([0-9]+, [0-9]+, [0-9]+\)")})
-            print("test")
-            print(rating)
-            sales = "debug"
-            #rating = semlar_list[2].text
-            #sales = semlar_list[1].text.split(': ')[1]
+            rating = semlar_soup.find(
+                "h1", attrs={"style": re.compile("color: rgb\([0-9]+, [0-9]+, [0-9]+\)")}).text
+            # sales = "debug" #TODO poprawic jak samler bedzie dzialac
+            sales = "TODO"
             rmkt_writer.writerow([wepid, wepname, modname, modprice, rating, modage, sales, stat1, stat2, stat3, stat4])
     rmkt_writer.writerow([])
 
@@ -140,4 +148,4 @@ rmkt_csv.close()
 print("---DONE---")
 playsound("sound.wav")
 time_elapsed = time() - start_time
-print("Time Elapsed " + str(timedelta(seconds=time_elapsed)))
+print("Time Elapsed " + str(timedelta(seconds=time_elapsed)).split(".")[0])

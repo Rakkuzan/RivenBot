@@ -1,36 +1,57 @@
 id;weapon;name;price;rating;age;sales;Buff1;Buff2;Buff3;Debuff
-riven_1428697;Plague Kripath;Vexitox;60;"[<h1 style=""color: rgb(224, 111, 82); font-size: 80pt;"">F</h1>]";new;debug;Toxin;% Electricity;;% Critical Chance
-riven_1423252;Plague Kripath;Hexa-critatio;75;"[<h1 style=""color: rgb(210, 224, 82); font-size: 80pt;"">C+</h1>]";> 1 day;debug;% Critical Chance;% Status Chance;% Electricity;% Puncture
-riven_1427381;Plague Kripath;Laci-toxitor;100;[];> 1 day;debug;% Additional Combo Count Chance;Range;Toxin;
-riven_1428342;Plague Kripath;Decipha;100;[];new;debug;% Status Duration;% Heat;;Punch Through
-riven_1425928;Plague Kripath;Critadra;120;"[<h1 style=""color: rgb(224, 129, 82); font-size: 80pt;"">F</h1>]";> 1 day;debug;% Critical Chance;% Attack Speed;;% Status Duration
-riven_1426635;Plague Kripath;Laci-fortides;120;"[<h1 style=""color: rgb(224, 111, 82); font-size: 80pt;"">F</h1>]";> 1 day;debug;% Status Duration;% Melee Combo Efficiency;% Additional Combo Count Chance;% Damage to Grineer
-riven_1421146;Plague Kripath;Ignicron;150;[];> 1 day;debug;% Heat;% Critical Chance;;Combo Duration
-riven_1427855;Plague Kripath;Toxinus;150;[];new;debug;Toxin;% Additional Combo Count Chance;;
-riven_1428148;Plague Kripath;Loctido;150;[];new;debug;% Cold;Range;;% Impact
-riven_1420056;Plague Kripath;Acri-tempitor;165;[];> 1 day;debug;% Critical Damage;Combo Duration;Range;
-riven_1424394;Plague Kripath;Paratis;200;"[<h1 style=""color: rgb(224, 180, 82); font-size: 80pt;"">D</h1>]";> 1 day;debug;Initial Combo;% Critical Damage;;
-riven_1426654;Plague Kripath;Toxi-critacon;200;"[<h1 style=""color: rgb(224, 161, 82); font-size: 80pt;"">D</h1>]";> 1 day;debug;Toxin;% Damage to Grineer;% Critical Chance;
-riven_1426900;Plague Kripath;Forti-critasus;200;"[<h1 style=""color: rgb(224, 146, 82); font-size: 80pt;"">D</h1>]";> 1 day;debug;% Slash;% Critical Chance;% Melee Combo Efficiency;
-riven_1428471;Plague Kripath;Decinus;200;"[<h1 style=""color: rgb(224, 156, 82); font-size: 80pt;"">D</h1>]";new;debug;% Status Duration;% Additional Combo Count Chance;;% Puncture
-riven_1422149;Plague Kripath;Toxitor;250;"[<h1 style=""color: rgb(224, 152, 82); font-size: 80pt;"">D</h1>]";> 1 day;debug;Range;Toxin;;
-riven_1422945;Plague Kripath;Vexipha;250;[];> 1 day;debug;% Electricity;% Heat;;% Status Chance
-riven_1423486;Plague Kripath;Critadra;290;"[<h1 style=""color: rgb(224, 107, 82); font-size: 80pt;"">F</h1>]";> 1 day;debug;% Critical Chance;% Attack Speed;;
-riven_1425465;Plague Kripath;Acri-cronidex;400;"[<h1 style=""color: rgb(224, 110, 82); font-size: 80pt;"">F</h1>]";> 1 day;debug;% Critical Damage;% Status Chance;% Attack Speed;% Slash
-riven_1428420;Plague Kripath;Acricron;400;"[<h1 style=""color: rgb(224, 216, 82); font-size: 80pt;"">C</h1>]";new;debug;% Critical Damage;% Critical Chance;;
-riven_1428486;Plague Kripath;Laci-cronitis;400;[];new;debug;% Attack Speed;% Additional Combo Count Chance;% Critical Damage;
-riven_1421849;Plague Kripath;Cronitor;450;[];> 1 day;debug;Range;% Attack Speed;;% Additional Combo Count Chance
-riven_1427784;Plague Kripath;Crita-toxinent;450;"[<h1 style=""color: rgb(224, 171, 82); font-size: 80pt;"">D</h1>]";new;debug;% Critical Chance;% Critical Chance for Slide Attack;Toxin;
-riven_1423728;Plague Kripath;Laci-critatis;599;"[<h1 style=""color: rgb(224, 183, 82); font-size: 80pt;"">D</h1>]";> 1 day;debug;% Critical Damage;% Additional Combo Count Chance;% Critical Chance;Combo Duration
-riven_1428301;Plague Kripath;Insi-cronitis;650;"[<h1 style=""color: rgb(224, 208, 82); font-size: 80pt;"">C-</h1>]";new;debug;% Critical Damage;% Attack Speed;% Puncture;% Finisher Damage
-riven_1427540;Plague Kripath;Geli-croninem;700;"[<h1 style=""color: rgb(224, 209, 82); font-size: 80pt;"">C-</h1>]";new;debug;% Attack Speed;Combo Duration;% Cold;% Puncture
-riven_1424393;Plague Kripath;Manti-critatis;800;"[<h1 style=""color: rgb(224, 182, 82); font-size: 80pt;"">D</h1>]";> 1 day;debug;% Critical Chance;% Critical Damage;% Damage to Corpus;
-riven_1428261;Plague Kripath;Acritor;800;[];new;debug;% Critical Damage;Range;;% Finisher Damage
-riven_1420938;Plague Kripath;Acri-loctidra;890;[];> 1 day;debug;% Critical Damage;% Attack Speed;Range;
-riven_1421434;Plague Kripath;Tempi-acricron;999;"[<h1 style=""color: rgb(198, 224, 82); font-size: 80pt;"">B-</h1>]";> 1 day;debug;% Critical Damage;% Critical Chance;Combo Duration;
-riven_1423133;Plague Kripath;Geli-cronicron;1000;"[<h1 style=""color: rgb(224, 176, 82); font-size: 80pt;"">D</h1>]";> 1 day;debug;% Attack Speed;% Cold;% Critical Chance;% Impact
-riven_1424786;Plague Kripath;Critadra;1200;"[<h1 style=""color: rgb(201, 224, 82); font-size: 80pt;"">C+</h1>]";> 1 day;debug;% Critical Chance;% Attack Speed;;% Damage to Corpus
-riven_1422242;Plague Kripath;Crita-vexisus;2500;"[<h1 style=""color: rgb(193, 224, 82); font-size: 80pt;"">B-</h1>]";> 1 day;debug;% Critical Chance;% Electricity;% Slash;% Damage to Grineer
-riven_1423490;Plague Kripath;Locti-critadex;3400;[];> 1 day;debug;% Critical Chance;Range;% Status Chance;% Impact
-riven_1425182;Plague Kripath;Acri-loctidra;9999;"[<h1 style=""color: rgb(202, 224, 82); font-size: 80pt;"">C+</h1>]";> 1 day;debug;Range;% Critical Damage;% Attack Speed;% Puncture
+riven_1423252;Plague Kripath;Hexa-critatio;75;C+;> 1 day;TODO;% Critical Chance;% Status Chance;% Electricity;% Puncture
+riven_1428909;Plague Kripath;Gelipha;90;F;new;TODO;% Heat;% Cold;;
+riven_1428342;Plague Kripath;Decipha;100;F;new;TODO;% Status Duration;% Heat;;Punch Through
+riven_1425928;Plague Kripath;Critadra;120;C+;> 1 day;TODO;% Critical Chance;% Attack Speed;;% Status Duration
+riven_1426635;Plague Kripath;Laci-fortides;120;F;> 1 day;TODO;% Status Duration;% Melee Combo Efficiency;% Additional Combo Count Chance;% Damage to Grineer
+riven_1421146;Plague Kripath;Ignicron;150;D;> 1 day;TODO;% Heat;% Critical Chance;;Combo Duration
+riven_1427855;Plague Kripath;Toxinus;150;F;new;TODO;Toxin;% Additional Combo Count Chance;;
+riven_1428148;Plague Kripath;Loctido;150;D;new;TODO;% Cold;Range;;% Impact
+riven_1420056;Plague Kripath;Acri-tempitor;165;D;> 1 day;TODO;% Critical Damage;Combo Duration;Range;
+riven_1424394;Plague Kripath;Paratis;200;D;> 1 day;TODO;Initial Combo;% Critical Damage;;
+riven_1426654;Plague Kripath;Toxi-critacon;200;D;> 1 day;TODO;Toxin;% Damage to Grineer;% Critical Chance;
+riven_1426900;Plague Kripath;Forti-critasus;200;D;> 1 day;TODO;% Slash;% Critical Chance;% Melee Combo Efficiency;
+riven_1428471;Plague Kripath;Decinus;200;F;new;TODO;% Status Duration;% Additional Combo Count Chance;;% Puncture
+riven_1422149;Plague Kripath;Toxitor;250;F;> 1 day;TODO;Range;Toxin;;
+riven_1422945;Plague Kripath;Vexipha;250;F;> 1 day;TODO;% Electricity;% Heat;;% Status Chance
+riven_1423486;Plague Kripath;Critadra;290;D;> 1 day;TODO;% Critical Chance;% Attack Speed;;
+riven_1425465;Plague Kripath;Acri-cronidex;400;D;> 1 day;TODO;% Critical Damage;% Status Chance;% Attack Speed;% Slash
+riven_1428420;Plague Kripath;Acricron;400;C;new;TODO;% Critical Damage;% Critical Chance;;
+riven_1428486;Plague Kripath;Laci-cronitis;400;D;new;TODO;% Attack Speed;% Additional Combo Count Chance;% Critical Damage;
+riven_1421849;Plague Kripath;Cronitor;450;D;> 1 day;TODO;Range;% Attack Speed;;% Additional Combo Count Chance
+riven_1427784;Plague Kripath;Crita-toxinent;450;D;new;TODO;% Critical Chance;% Critical Chance for Slide Attack;Toxin;
+riven_1423728;Plague Kripath;Laci-critatis;599;C-;> 1 day;TODO;% Critical Damage;% Additional Combo Count Chance;% Critical Chance;Combo Duration
+riven_1428301;Plague Kripath;Insi-cronitis;650;C-;new;TODO;% Critical Damage;% Attack Speed;% Puncture;% Finisher Damage
+riven_1427540;Plague Kripath;Geli-croninem;700;D;> 1 day;TODO;% Attack Speed;Combo Duration;% Cold;% Puncture
+riven_1424393;Plague Kripath;Manti-critatis;800;D;> 1 day;TODO;% Critical Chance;% Critical Damage;% Damage to Corpus;
+riven_1428261;Plague Kripath;Acritor;800;B-;new;TODO;% Critical Damage;Range;;% Finisher Damage
+riven_1420938;Plague Kripath;Acri-loctidra;890;D;> 1 day;TODO;% Critical Damage;% Attack Speed;Range;
+riven_1421434;Plague Kripath;Tempi-acricron;999;D;> 1 day;TODO;% Critical Damage;% Critical Chance;Combo Duration;
+riven_1423133;Plague Kripath;Geli-cronicron;1000;B-;> 1 day;TODO;% Attack Speed;% Cold;% Critical Chance;% Impact
+riven_1424786;Plague Kripath;Critadra;1200;C+;> 1 day;TODO;% Critical Chance;% Attack Speed;;% Damage to Corpus
+riven_1422242;Plague Kripath;Crita-vexisus;2500;D;> 1 day;TODO;% Critical Chance;% Electricity;% Slash;% Damage to Grineer
+riven_1423490;Plague Kripath;Locti-critadex;3400;B+;> 1 day;TODO;% Critical Chance;Range;% Status Chance;% Impact
+riven_1425182;Plague Kripath;Acri-loctidra;9999;C+;> 1 day;TODO;Range;% Critical Damage;% Attack Speed;% Puncture
+
+riven_1421885;Basmu;Vexi-acritox;100;C-;> 1 day;TODO;% Electricity;Toxin;% Critical Damage;% Reload Speed
+riven_1422378;Basmu;Feva-geliata;100;C-;> 1 day;TODO;% Damage;% Cold;% Reload Speed;
+riven_1428758;Basmu;Acrinak;100;D;new;TODO;% Critical Damage;% Projectile Speed;;% Status Chance
+riven_1423260;Basmu;Toxiata;120;D;> 1 day;TODO;% Damage;Toxin;;% Status Chance
+riven_1424569;Basmu;Igninok;125;F;> 1 day;TODO;% Heat;Punch Through;;% Zoom
+riven_1423471;Basmu;Toxi-fevadex;150;D;> 1 day;TODO;Toxin;% Reload Speed;% Status Chance;
+riven_1425269;Basmu;Satipha;160;D;> 1 day;TODO;% Heat;% Multishot;;% Fire Rate
+riven_1428623;Basmu;Satidex;160;C;new;TODO;% Status Chance;% Multishot;;
+riven_1423508;Basmu;Acritio;175;C-;> 1 day;TODO;% Electricity;% Critical Damage;;
+riven_1421438;Basmu;Geli-vexicron;180;C-;> 1 day;TODO;% Cold;% Electricity;% Critical Chance;% Fire Rate
+riven_1424143;Basmu;Acritak;199;D;> 1 day;TODO;% Critical Damage;% Reload Speed;;% Fire Rate
+riven_1426478;Basmu;Acrinak;400;D;> 1 day;TODO;% Critical Damage;% Projectile Speed;;
+riven_1428390;Basmu;Zeti-visidex;400;C;new;TODO;% Damage;% Status Chance;% Weapon Recoil;
+riven_1425539;Basmu;Satitis;470;B-;> 1 day;TODO;% Critical Damage;% Multishot;;% Ammo Maximum
+riven_1423129;Basmu;Acri-argitron;500;F;> 1 day;TODO;% Critical Damage;% Damage to Corpus;% Damage to Grineer;% Magazine Capacity
+riven_1421640;Basmu;Critaata;600;A-;> 1 day;TODO;% Damage;% Critical Chance;;
+riven_1424571;Basmu;Acri-visican;900;C+;> 1 day;TODO;% Multishot;% Critical Damage;% Damage;% Status Chance
+riven_1421773;Basmu;Croni-armaata;1000;C-;> 1 day;TODO;% Damage;% Fire Rate;% Magazine Capacity;% Reload Speed
+riven_1426099;Basmu;Sati-visicron;1300;C+;> 1 day;TODO;% Critical Chance;% Multishot;% Damage;% Damage to Grineer
+riven_1423525;Basmu;Visi-cronidex;3000;C+;> 1 day;TODO;% Fire Rate;% Damage;% Status Chance;% Reload Speed
+riven_1425051;Basmu;Acri-saticron;5000;B;> 1 day;TODO;% Critical Chance;% Critical Damage;% Multishot;% Damage to Infested
 
