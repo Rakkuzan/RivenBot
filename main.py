@@ -127,7 +127,7 @@ for weapon in weapons:
             sleep(0.1)
             # write to csv
             semlar_soup = BeautifulSoup(semlar_driver.page_source, "lxml")
-            rating = semlar_soup.find_all("h1")
+            rating = semlar_soup.find_all("h1", attrs={"style": re.compile("color: rgb\([0-9]+, [0-9]+, [0-9]+\)")})
             print("test")
             print(rating)
             sales = "debug"
