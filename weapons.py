@@ -1,4 +1,4 @@
-def weapons():
+def weaponslist1():
     return [
            "Kuva Bramma",
            "Lanka",
@@ -31,3 +31,6 @@ def weapons():
            "Baza",
            "Brakk",
            ]
+
+def weaponslist2():
+     return ["Lanka", "Rubico"]

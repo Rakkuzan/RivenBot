@@ -1,26 +1,25 @@
 from BotFunctions import rmkt2sem, rmkt2semWep, isStatCorrect, isModCorrect
-from weapons import weapons
+from weapons import weaponslist1, weaponslist2
 import re
 from datetime import timedelta
 from time import sleep, time
 from playsound import playsound
 from bs4 import BeautifulSoup
 from selenium import webdriver
-from selenium.webdriver.common.by import By
-from selenium.webdriver.support.wait import WebDriverWait
 from selenium.webdriver.common.keys import Keys
 from selenium.webdriver.support.ui import Select
 from selenium.webdriver.firefox.options import Options
+from selenium.webdriver.common.by import By
+from selenium.webdriver.support.wait import WebDriverWait
 from selenium.webdriver.support import expected_conditions as ec
-import csv
+
+from writer import Writer
 
 start_time = time()
-weapons = weapons()
+weapons = weaponslist2()
 
 # writing to .csv
-rmkt_csv = open("rlst.csv", mode='w', newline='')
-rmkt_writer = csv.writer(rmkt_csv, delimiter=';', quotechar='"', quoting=csv.QUOTE_MINIMAL)
-rmkt_writer.writerow(["id", "weapon", "name", "price", "rating", "age", "sales", "Buff1", "Buff2", "Buff3", "Debuff"])
+writer = Writer("modlist.csv")
 
 #TODO sprawdzic czy strony sa juz otwarte
 options = Options()
@@ -56,8 +55,7 @@ for weapon in weapons:
     rmkt_driver.execute_script("loadList(1,'price','ASC')")  # price ascending
 
     # TODO: Zrobic zeby to gnojstwo dzialalo
-    print(ec.presence_of_element_located((By.XPATH, "centedsadr")))
-    WebDriverWait(rmkt_driver, 10).until(ec.presence_of_element_located((By.TAG_NAME, "center")))
+    #WebDriverWait(rmkt_driver, 10).until(ec.presence_of_element_located((By.TAG_NAME, "center")))
     while True:
         rmkt_soup = BeautifulSoup(rmkt_driver.page_source, "lxml")
         loading = rmkt_soup.find_all("center")
@@ -129,9 +127,9 @@ for weapon in weapons:
                 "h1", attrs={"style": re.compile("color: rgb\([0-9]+, [0-9]+, [0-9]+\)")}).text
             sales = (semlar_soup.find(
                 "div", attrs={"style": "margin-top: 50px; text-align: center;"}).text.split(": "))[1]
-            rmkt_writer.writerow(
-                [wepid, wepname, modname, modprice, rating, modage, sales, stat1, stat2, stat3, stat4])
-    rmkt_writer.writerow([])
+            writer.writerow(
+                wepid, wepname, modname, modprice, rating, modage, sales, stat1, stat2, stat3, stat4)
+    writer.writeempty()
 
 rmkt_driver.quit()
 semlar_driver.quit()
