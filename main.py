@@ -24,7 +24,7 @@ rmkt_writer.writerow(["id", "weapon", "name", "price", "rating", "age", "sales",
 
 #TODO sprawdzic czy strony sa juz otwarte
 options = Options()
-options.headless = True
+options.headless = False
 print("Opening websites")
 rmkt_driver = webdriver.Firefox(options=options)
 semlar_driver = webdriver.Firefox(options=options)
@@ -56,8 +56,8 @@ for weapon in weapons:
     rmkt_driver.execute_script("loadList(1,'price','ASC')")  # price ascending
 
     # TODO: Zrobic zeby to gnojstwo dzialalo
+    print(ec.presence_of_element_located((By.XPATH, "centedsadr")))
     WebDriverWait(rmkt_driver, 10).until(ec.presence_of_element_located((By.TAG_NAME, "center")))
-    print(ec.presence_of_element_located((By.TAG_NAME, "center")))
     while True:
         rmkt_soup = BeautifulSoup(rmkt_driver.page_source, "lxml")
         loading = rmkt_soup.find_all("center")
