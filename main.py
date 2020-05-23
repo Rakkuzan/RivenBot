@@ -1,4 +1,5 @@
 from BotFunctions import rmkt2sem, rmkt2semWep, isStatCorrect, isModCorrect
+from weapons import weapons
 import re
 from datetime import timedelta
 from time import sleep, time
@@ -14,28 +15,7 @@ from selenium.webdriver.support import expected_conditions as ec
 import csv
 
 start_time = time()
-weapons = [
-           "Kuva Bramma",
-           # "Lanka",
-           # "Rubico",
-           # "Vectis",
-           # "Corinth",
-           # "Redeemer",
-           # "Kohm",
-           # "Gram",
-           # "Opticor",      # uncommon
-           # "Kronen",
-           # "Catchmoon",
-           # "Nukor",
-           # "Kuva Chakkhurr",
-           # "Amprex",       # uncommon
-           # "Shedu",
-           # "Acceltra",
-           # "Lenz",         # uncommon
-           # "Dread",        # uncommon
-           #"Plague Kripath",
-           #"Basmu"           # uncommon
-           ]
+weapons = weapons()
 
 # writing to .csv
 rmkt_csv = open("rlst.csv", mode='w', newline='')
@@ -44,7 +24,7 @@ rmkt_writer.writerow(["id", "weapon", "name", "price", "rating", "age", "sales",
 
 #TODO sprawdzic czy strony sa juz otwarte
 options = Options()
-options.headless = False
+options.headless = True
 print("Opening websites")
 rmkt_driver = webdriver.Firefox(options=options)
 semlar_driver = webdriver.Firefox(options=options)
@@ -98,6 +78,7 @@ for weapon in weapons:
         stat3, error3 = rmkt2sem(list_el["data-stat3"], weptype, wepname)
         stat4, error4 = rmkt2sem(list_el["data-stat4"], weptype, wepname)
 
+        #TODO: try catch bo paszyjaja mi placze
         cont = False
         for error in [error1, error2, error3, error4]:
             if error != "":
