@@ -81,7 +81,7 @@ def isModCorrect(stat1, stat2, stat3, stat4, statc):
                 or ((stat1 == stat4) and (not stat1 == ""))
                 or ((stat2 == stat3) and (not stat2 == ""))
                 or ((stat2 == stat4) and (not stat2 == ""))
-                or (stat3 == stat4) and (not stat3 == "")))
+                or ((stat3 == stat4) and (not stat3 == ""))))
     else:
         cond = False
     return cond

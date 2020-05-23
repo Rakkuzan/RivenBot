@@ -9,12 +9,13 @@ from selenium.webdriver.common.by import By
 from selenium.webdriver.support.wait import WebDriverWait
 from selenium.webdriver.common.keys import Keys
 from selenium.webdriver.support.ui import Select
+from selenium.webdriver.firefox.options import Options
 from selenium.webdriver.support import expected_conditions as ec
 import csv
 
 start_time = time()
 weapons = [
-           # "Kuva Bramma",
+           "Kuva Bramma",
            # "Lanka",
            # "Rubico",
            # "Vectis",
@@ -33,7 +34,7 @@ weapons = [
            # "Lenz",         # uncommon
            # "Dread",        # uncommon
            #"Plague Kripath",
-           "Basmu"           # uncommon
+           #"Basmu"           # uncommon
            ]
 
 # writing to .csv
@@ -42,11 +43,14 @@ rmkt_writer = csv.writer(rmkt_csv, delimiter=';', quotechar='"', quoting=csv.QUO
 rmkt_writer.writerow(["id", "weapon", "name", "price", "rating", "age", "sales", "Buff1", "Buff2", "Buff3", "Debuff"])
 
 #TODO sprawdzic czy strony sa juz otwarte
-#TODO zrobic headless
-rmkt_driver = webdriver.Firefox()
-semlar_driver = webdriver.Firefox()
+options = Options()
+options.headless = False
+print("Opening websites")
+rmkt_driver = webdriver.Firefox(options=options)
+semlar_driver = webdriver.Firefox(options=options)
 rmkt_driver.get("https://riven.market/list/PC")
 semlar_driver.get("https://semlar.com/comp")
+print("Websites open")
 sleep(1)
 semlar_driver.execute_script("window.scrollBy(0,500)")
 sleep(1)
@@ -73,14 +77,15 @@ for weapon in weapons:
 
     # TODO: Zrobic zeby to gnojstwo dzialalo
     # WebDriverWait(rmkt_driver, 10).until(ec.presence_of_element_located((By.TAG_NAME, "center")))
+
     while True:
         rmkt_soup = BeautifulSoup(rmkt_driver.page_source, "lxml")
         loading = rmkt_soup.find_all("center")
         sleep(0.05)
-        if not loading:
+        if not loading:  # if there is no "Loading" element
             break
-    rmkt_list = rmkt_soup.find_all("div", class_="riven")
 
+    rmkt_list = rmkt_soup.find_all("div", class_="riven")
     for list_el in rmkt_list:
         wepid = list_el["id"]
         wepname = rmkt2semWep(list_el["data-weapon"])
@@ -110,7 +115,7 @@ for weapon in weapons:
             if not isStatCorrect(stat, weptype):
                 cond1 = False
             if stat != "":
-                statc = statc + 1
+                statc += 1
         cond2 = (list_el["data-age"] == "new" or list_el["data-age"] == "> 1 day")
         cond3 = isModCorrect(stat1, stat2, stat3, stat4, statc)
 
@@ -140,13 +145,16 @@ for weapon in weapons:
             # write to csv
             semlar_soup = BeautifulSoup(semlar_driver.page_source, "lxml")
             rating = semlar_soup.find(
-                "h1", attrs={"style": re.compile("color: rgb\([0-9]+, [0-9]+, [0-9]+\)")}).textK
+                "h1", attrs={"style": re.compile("color: rgb\([0-9]+, [0-9]+, [0-9]+\)")}).text
             sales = (semlar_soup.find(
                 "div", attrs={"style": "margin-top: 50px; text-align: center;"}).text.split(": "))[1]
-            rmkt_writer.writerow([wepid, wepname, modname, modprice, rating, modage, sales, stat1, stat2, stat3, stat4])
+            rmkt_writer.writerow(
+                [wepid, wepname, modname, modprice, rating, modage, sales, stat1, stat2, stat3, stat4])
     rmkt_writer.writerow([])
 
-rmkt_csv.close()
+rmkt_driver.quit()
+semlar_driver.quit()
+
 print("---DONE---")
 playsound("sound.wav")
 time_elapsed = time() - start_time
