@@ -14,4 +14,3 @@ class Writer:
 
     def writeempty(self):
         self.csv_writer.writerow([])
-        print("writeempty")
