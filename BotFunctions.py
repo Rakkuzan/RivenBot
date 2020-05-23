@@ -66,23 +66,10 @@ def isStatCorrect(stat, weptype):  # TODO: areStatsCorrect
     return True
 
 def isModCorrect(stat1, stat2, stat3, stat4, statc):
-    if statc >= 3:
-        # staty rozne od siebie
-        cond = (not ((stat1 == stat2)
-                or (stat1 == stat3)
-                or (stat1 == stat4)
-                or (stat2 == stat3)
-                or (stat2 == stat4)
-                or (stat3 == stat4)))
-        # staty rozne od siebie z wyjatkiem ""
-    elif statc == 2:
-        cond = (not (
-                ((stat1 == stat2) and (not stat1 == ""))
-                or ((stat1 == stat3) and (not stat1 == ""))
-                or ((stat1 == stat4) and (not stat1 == ""))
-                or ((stat2 == stat3) and (not stat2 == ""))
-                or ((stat2 == stat4) and (not stat2 == ""))
-                or ((stat3 == stat4) and (not stat3 == ""))))
+    stats = [stat1, stat2, stat3, stat4]
+    if statc >= 3 and len(set(stats)) == len(stats):
+        return True
+    elif statc == 2 and len(set(stats)) == 3:
+        return True
     else:
-        cond = False
-    return cond
+        return False

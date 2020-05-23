@@ -56,8 +56,8 @@ for weapon in weapons:
     rmkt_driver.execute_script("loadList(1,'price','ASC')")  # price ascending
 
     # TODO: Zrobic zeby to gnojstwo dzialalo
-    # WebDriverWait(rmkt_driver, 10).until(ec.presence_of_element_located((By.TAG_NAME, "center")))
-
+    WebDriverWait(rmkt_driver, 10).until(ec.presence_of_element_located((By.TAG_NAME, "center")))
+    print(ec.presence_of_element_located((By.TAG_NAME, "center")))
     while True:
         rmkt_soup = BeautifulSoup(rmkt_driver.page_source, "lxml")
         loading = rmkt_soup.find_all("center")
