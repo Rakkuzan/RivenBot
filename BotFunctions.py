@@ -4,6 +4,7 @@ def rmkt2semWep(wepname):
         "Kuva_Bramma": "Kuva Bramma",
         "Kuva_Chakkhurr": "Kuva Chakkhurr",
         "Plague_Kripath": "Plague Kripath",
+        "Reaper_prime": "Reaper Prime",
         # TODO: wszystkie bronie
     }.get(wepname, wepname)
 
