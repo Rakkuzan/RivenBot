@@ -1,4 +1,5 @@
 from BotFunctions import rmkt2sem, rmkt2semWep, isStatCorrect, isModCorrect
+from semlar import Semlar
 from weapons import weaponslist1, weaponslist2
 import re
 from datetime import timedelta
@@ -15,37 +16,18 @@ from selenium.webdriver.support import expected_conditions as ec
 
 from writer import Writer
 
+options = Options()
+options.headless = False
 start_time = time()
 weapons = weaponslist2()
 
 # writing to .csv
 writer = Writer("modlist.csv")
 
-#TODO sprawdzic czy strony sa juz otwarte
-options = Options()
-options.headless = False
-print("Opening websites")
 rmkt_driver = webdriver.Firefox(options=options)
-semlar_driver = webdriver.Firefox(options=options)
 rmkt_driver.get("https://riven.market/list/PC")
-semlar_driver.get("https://semlar.com/comp")
+semlar = Semlar(options.headless)
 print("Websites open")
-sleep(1)
-semlar_driver.execute_script("window.scrollBy(0,500)")
-sleep(1)
-
-# semlar - useful elements
-semlar_weapon = semlar_driver.find_element_by_css_selector("#react-select-2-input")
-semlar_weapon_but = semlar_driver.find_element_by_xpath(
-    "/html/body/div/div[3]/div[2]/div/div[2]/div[1]/div/div[1]/div/div/div[2]/div")
-semlar_buffs = semlar_driver.find_element_by_css_selector("#react-select-3-input")
-semlar_buffs_but = semlar_driver.find_element_by_xpath(
-    "/html/body/div/div[3]/div[2]/div/div[2]/div[1]/div/div[2]/div/div/div[2]/div")
-semlar_debuffs = semlar_driver.find_element_by_css_selector("#react-select-4-input")
-semlar_debuffs_but = semlar_driver.find_element_by_xpath(
-    "/html/body/div/div[3]/div[2]/div/div[2]/div[1]/div/div[3]/div/div/div[2]/div")
-semlar_cmp = semlar_driver.find_element_by_xpath(
-    "/html/body/div/div[3]/div[2]/div/div[3]/button")
 
 for weapon in weapons:
     print("---Scanning " + weapon + "---")
@@ -99,40 +81,13 @@ for weapon in weapons:
         cond3 = isModCorrect(stat1, stat2, stat3, stat4, statc)
 
         if cond1 and cond2 and cond3:
-            # Semlar weaponname
-            semlar_weapon_but.click()
-            semlar_weapon.send_keys(wepname)
-            semlar_weapon.send_keys(Keys.ENTER)
-            # Semlar buff1
-            semlar_buffs_but.click()
-            semlar_buffs.clear()
-            semlar_buffs.send_keys(stat1)
-            semlar_buffs.send_keys(Keys.ENTER)
-            # Semlar buff2
-            semlar_buffs.send_keys(stat2)
-            semlar_buffs.send_keys(Keys.ENTER)
-            # Semlar buff3
-            semlar_buffs.send_keys(stat3)
-            semlar_buffs.send_keys(Keys.ENTER)
-            # Semlar debuff
-            semlar_debuffs_but.click()
-            semlar_debuffs.clear()
-            semlar_debuffs.send_keys(stat4)
-            semlar_debuffs.send_keys(Keys.ENTER)
-            semlar_cmp.click()
-            sleep(0.1)  # TODO lepsze czekanie
+            semlar.checkStat(wepname, stat1, stat2, stat3, stat4)
             # write to csv
-            semlar_soup = BeautifulSoup(semlar_driver.page_source, "lxml")
-            rating = semlar_soup.find(
-                "h1", attrs={"style": re.compile("color: rgb\([0-9]+, [0-9]+, [0-9]+\)")}).text
-            sales = (semlar_soup.find(
-                "div", attrs={"style": "margin-top: 50px; text-align: center;"}).text.split(": "))[1]
-            writer.writerow(
-                wepid, wepname, modname, modprice, rating, modage, sales, stat1, stat2, stat3, stat4)
+            writer.writerow(wepid, wepname, modname, modprice, semlar.rating, modage, semlar.sales, stat1, stat2, stat3, stat4)
     writer.writeempty()
 
 rmkt_driver.quit()
-semlar_driver.quit()
+semlar.quit()
 
 print("---DONE---")
 playsound("sound.wav")
