@@ -33,4 +33,4 @@ def weaponslist1():
            ]
 
 def weaponslist2():
-     return ["Lanka"]#, "Rubico"]
+     return ["Lanka", "Rubico"]

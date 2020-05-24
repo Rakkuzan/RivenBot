@@ -1,5 +1,15 @@
+from rivenmarket import Rivenmarket
 from semlar import Semlar
 
+
+def runBot(headless, weapon):
+    rmkt = Rivenmarket(headless)
+    for cnt, weapon in enumerate(weapon):
+        print("---Scanning " + weapon + "---")
+        rmkt.loadWeapon(weapon)
+        filename = weapon + ".csv"
+        runSemlar(headless, rmkt.list, filename)
+    rmkt.quit()
 
 def runSemlar(headless, modlist, filename):
     semlar = Semlar(headless, filename)
