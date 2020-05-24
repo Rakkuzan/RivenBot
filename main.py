@@ -1,36 +1,38 @@
-from rivenmarket import Rivenmarket
-from semlar import Semlar
+from BotFunctions import runSemlar
 from weapons import weaponslist1, weaponslist2
 from datetime import timedelta
-from time import sleep, time
+from time import time
 from playsound import playsound
+import asyncio
+from rivenmarket import Rivenmarket
+from multiprocessing import Process
+import sys
 
-start_time = time()
-weapons = weaponslist2()
+sys.setrecursionlimit(50000)
+def main():
+    print("yes")
+    start_time = time()
+    weapons = weaponslist2()
+    headless = False
 
-headless = False
-rmkt = Rivenmarket(headless)
-semlar = Semlar(headless)
+    rmkt = Rivenmarket(headless)
+    processes = []
+    for cnt, weapon in enumerate(weapons):
+        rmkt.loadWeapon(weapon)
+        filename = weapon + ".csv"
+        processes.append(Process(target=runSemlar, args=(headless, rmkt.list, filename,)))
+        processes[cnt].start()
+    rmkt.quit()
 
-for weapon in weapons:
-    rmkt.loadWeapon(weapon)
+    for process in processes:
+        process.join()
 
-    for mod in rmkt.list:
-        rmkt.loadMod(mod)
-        if rmkt.isWeaponBugged():
-            continue
 
-        if rmkt.modMeetsCriteria():
-            semlar.loadstats(rmkt.wepname, rmkt.stat1, rmkt.stat2, rmkt.stat3, rmkt.stat4,
-                             rmkt.wepid, rmkt.modname, rmkt.modprice, rmkt.modage)
-            semlar.checkRating()
-            semlar.write()
-    semlar.writeempty()
+    print("---DONE---")
+    playsound("sound.wav")
+    time_elapsed = time() - start_time
+    print("Time Elapsed " + str(timedelta(seconds=time_elapsed)).split(".")[0])
 
-rmkt.quit()
-semlar.quit()
 
-print("---DONE---")
-playsound("sound.wav")
-time_elapsed = time() - start_time
-print("Time Elapsed " + str(timedelta(seconds=time_elapsed)).split(".")[0])
+if __name__ == '__main__':
+    main()

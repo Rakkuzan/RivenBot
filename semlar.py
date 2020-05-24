@@ -9,22 +9,26 @@ from writer import Writer
 
 
 class Semlar:
-    def __init__(self, headless):
+    def __init__(self, headless, filename):
         # zeby mi gnoji nie podkreslalo
         self.soup = None
         self.sales = None
         self.rating = None
         self.wepname = None
-        self.stat1 = None
-        self.stat2 = None
-        self.stat3 = None
-        self.stat4 = None
+        self.stat1, self.error1 = None, None
+        self.stat2, self.error2 = None, None
+        self.stat3, self.error3 = None, None
+        self.stat4, self.error4 = None, None
         self.wepid = None
         self.modname = None
         self.modprice = None
         self.modage = None
+        self.weaponbugged = None
+        self.weptype = None
+        self.statcount = None
+        self.cond1, self.cond2, self.cond3 = None, None, None
 
-        self.writer = Writer("modlist.csv")
+        self.writer = Writer(filename)
         self.options = Options()
         self.options.headless = headless
         print("Opening semlar")
@@ -47,6 +51,19 @@ class Semlar:
             "/html/body/div/div[3]/div[2]/div/div[2]/div[1]/div/div[3]/div/div/div[2]/div")
         self.semlar_cmp = self.driver.find_element_by_xpath(
             "/html/body/div/div[3]/div[2]/div/div[3]/button")
+
+    def loadMod(self, mod):
+        self.wepid = mod["id"]
+        self.wepname = self.__rmkt2semWep(mod["data-weapon"])
+        self.weptype = mod["data-wtype"]
+        self.modname = mod["data-name"]
+        self.modprice = mod["data-price"]
+        self.modage = mod["data-age"]
+        self.stat1, self.error1 = self.__rmkt2sem(mod["data-stat1"])
+        self.stat2, self.error2 = self.__rmkt2sem(mod["data-stat2"])
+        self.stat3, self.error3 = self.__rmkt2sem(mod["data-stat3"])
+        self.stat4, self.error4 = self.__rmkt2sem(mod["data-stat4"])
+        print("---Scanning " + self.wepname + "---")
 
     def checkRating(self):
         # Semlar weaponname
@@ -77,9 +94,6 @@ class Semlar:
         self.sales = (self.soup.find(
             "div", attrs={"style": "margin-top: 50px; text-align: center;"}).text.split(": "))[1]
 
-    def quit(self):
-        self.driver.quit()
-
     def loadstats(self, wepname, stat1, stat2, stat3, stat4, wepid, modname, modprice, modage):
         self.wepname = wepname
         self.stat1 = stat1
@@ -91,9 +105,112 @@ class Semlar:
         self.modprice = modprice
         self.modage = modage
 
+    def isWeaponBugged(self):
+        # TODO: try catch bo paszyjaja mi placze
+        self.weaponbugged = False
+        for error in [self.error1, self.error2, self.error3, self.error4]:
+            if error != "":
+                self.weaponbugged = True
+                print(error+"\n"+" \""+self.stat1+"\""
+                      + " \""+self.stat2+"\""
+                      + " \""+self.stat3+"\""
+                      + " \""+self.stat4+"\"")
+        return self.weaponbugged
+
+    def modMeetsCriteria(self):
+        self.statcount = 0
+        self.cond1 = True
+        for stat in [self.stat1, self.stat2, self.stat3, self.stat4]:
+            if not self.__isStatCorrect(stat):
+                self.cond1 = False
+            if stat != "":
+                self.statcount += 1
+        self.cond2 = (self.modage == "new" or self.modage == "> 1 day")
+        self.cond3 = self.__isModCorrect()
+        return self.cond1 and self.cond2 and self.cond3
+
     def write(self):
         self.writer.writerow(self.wepid, self.wepname, self.modname, self.modprice, self.rating, self.modage,
                              self.sales, self.stat1, self.stat2, self.stat3, self.stat4)
 
     def writeempty(self):
         self.writer.writeempty()
+
+    def quit(self):
+        self.driver.quit()
+
+    def __isStatCorrect(self, stat):  # TODO: areStatsCorrect
+        if self.weptype == "Melee":
+            if stat == "% Ammo Maximum":
+                # TODO: wszystkie przypadki
+                return False
+        return True
+
+    def __isModCorrect(self):
+        self.stats = [self.stat1, self.stat2, self.stat3, self.stat4]
+        if self.statcount >= 3 and len(set(self.stats)) == len(self.stats):
+            return True
+        elif self.statcount == 2 and len(set(self.stats)) == 3:
+            return True
+        else:
+            return False
+
+    @staticmethod
+    def __rmkt2semWep(wepname):
+        return {
+            "Kuva_Bramma": "Kuva Bramma",
+            "Kuva_Chakkhurr": "Kuva Chakkhurr",
+            "Plague_Kripath": "Plague Kripath",
+            "Reaper_prime": "Reaper Prime",
+            # TODO: wszystkie bronie
+        }.get(wepname, wepname)
+
+    def __rmkt2sem(self, stat):
+        error = ""
+        if stat == "Speed":
+            if self.weptype == "Melee":
+                stat += "_m"
+            else:
+                stat += "_o"
+        # BUG: semlar nie ma takiej staty jak dmg w Plague Kripath
+        if self.wepname == "Plague Kripath" and stat == "Damage":
+            stat = "Error"
+            error = "Error: Plague Kripath + Damage"
+        return {
+                   "": "",
+                   "Damage": "% Damage",
+                   "Multi": "% Multishot",
+                   "Speed_m": "% Attack Speed",
+                   "Speed_o": "% Fire Rate",
+                   "Corpus": "% Damage to Corpus",
+                   "Grineer": "% Damage to Grineer",
+                   "Infested": "% Damage to Infested",
+                   "Impact": "% Impact",
+                   "Puncture": "% Puncture",
+                   "Slash": "% Slash",
+                   "Cold": "% Cold",
+                   "Electric": "% Electricity",
+                   "Heat": "% Heat",
+                   "Toxin": "Toxin",
+                   "ChannelDmg": "% Channeling Damage",
+                   "ChannelEff": "% Channeling Efficiency",
+                   "Combo": "Combo Duration",
+                   "CritChance": "% Critical Chance",
+                   "Slide": "% Critical Chance for Slide Attack",
+                   "CritDmg": "% Critical Damage",
+                   "Finisher": "% Finisher Damage",
+                   "Flight": "% Projectile Speed",
+                   "Ammo": "% Ammo Maximum",
+                   "Punch": "Punch Through",
+                   "Reload": "% Reload Speed",
+                   "Range": "Range",
+                   "StatusC": "% Status Chance",
+                   "StatusD": "% Status Duration",
+                   "Recoil": "% Weapon Recoil",
+                   "Zoom": "% Zoom",
+                   "InitC": "Initial Combo",
+                   "ComboEfficiency": "% Melee Combo Efficiency",
+                   "ComboGainExtra": "% Additional Combo Count Chance",
+                   "ComboGainLost": "% Chance to Gain Combo Count",
+                   "Magazine": "% Magazine Capacity"
+               }.get(stat, "Error"), error
