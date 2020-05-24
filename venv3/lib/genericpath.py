@@ -75,6 +75,7 @@ def commonprefix(m):
             return s1[:i]
     return s1
 
+
 # Split a path in root and extension.
 # The extension is everything starting at the last dot in the last
 # pathname component; the root is everything before that.

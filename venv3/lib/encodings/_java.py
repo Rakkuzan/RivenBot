@@ -1,14 +1,13 @@
 # implements a factory to create codec instances for a given java charset
 
 import codecs
-
 from array import array
 from functools import partial
+
+from StringIO import StringIO
 from java.lang import StringBuilder
 from java.nio import ByteBuffer, CharBuffer
 from java.nio.charset import Charset, IllegalCharsetNameException
-from StringIO import StringIO
-
 
 python_to_java = {
     'cp932': 'cp942',
@@ -17,7 +16,6 @@ python_to_java = {
     'iso2022_kr': 'ISO-2022-KR',
     'shift_jisx0213': 'x-SJIS_0213',
 }
-
 
 
 def _java_factory(encoding):
@@ -129,7 +127,7 @@ class IncrementalEncoder(codecs.IncrementalEncoder):
 
 class IncrementalDecoder(codecs.IncrementalDecoder):
 
-    def __init__(self, errors='strict', encoding=None,):
+    def __init__(self, errors='strict', encoding=None, ):
         assert encoding
         self.encoding = encoding
         self.errors = errors
@@ -192,7 +190,7 @@ def _process_decode_errors(encoding, input, result, error_function, input_buffer
     if result.isError():
         e = UnicodeDecodeError(
             encoding,
-            input, 
+            input,
             input_buffer.position(),
             input_buffer.position() + result.length(),
             'illegal multibyte sequence')
@@ -212,7 +210,7 @@ def _process_incomplete_decode(encoding, input, error_function, input_buffer, bu
     if input_buffer.position() < input_buffer.limit():
         e = UnicodeDecodeError(
             encoding,
-            input, 
+            input,
             input_buffer.position(),
             input_buffer.limit(),
             'illegal multibyte sequence')
@@ -236,7 +234,7 @@ def _process_encode_errors(encoding, input, result, error_function, input_buffer
     if result.isError():
         e = UnicodeEncodeError(
             encoding,
-            input, 
+            input,
             input_buffer.position(),
             input_buffer.position() + result.length(),
             'illegal multibyte sequence')

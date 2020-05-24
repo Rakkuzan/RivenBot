@@ -723,10 +723,10 @@ if _is_pypy:
         import encodings
 
         if "exceptions" in sys.builtin_module_names:
-            import exceptions
+            pass
 
         if "zipimport" in sys.builtin_module_names:
-            import zipimport
+            pass
 
 
 def main():

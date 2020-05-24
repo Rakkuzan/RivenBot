@@ -1,13 +1,14 @@
 import codecs
 import re
+
 from java.net import IDN
+
 try:
     # import from jarjar-ed version if available
     from org.python.icu.text import StringPrep, StringPrepParseException
 except ImportError:
     # dev version of Jython, so use extlibs
     from com.ibm.icu.text import StringPrep, StringPrepParseException
-
 
 # IDNA section 3.1
 dots = re.compile(u"[\u002E\u3002\uFF0E\uFF61]")
@@ -19,7 +20,7 @@ def nameprep(label):
             label, StringPrep.ALLOW_UNASSIGNED)
     except StringPrepParseException, e:
         raise UnicodeError("Invalid character")
-    
+
 
 def ToASCII(label):
     return IDN.toASCII(label)
@@ -34,18 +35,18 @@ def ToUnicode(label):
 ### Codec APIs
 
 class Codec(codecs.Codec):
-    def encode(self,input,errors='strict'):
+    def encode(self, input, errors='strict'):
 
         if errors != 'strict':
             # IDNA is quite clear that implementations must be strict
-            raise UnicodeError("unsupported error handling "+errors)
+            raise UnicodeError("unsupported error handling " + errors)
 
         if not input:
             return "", 0
 
         result = []
         labels = dots.split(input)
-        if labels and len(labels[-1])==0:
+        if labels and len(labels[-1]) == 0:
             trailing_dot = '.'
             del labels[-1]
         else:
@@ -53,12 +54,12 @@ class Codec(codecs.Codec):
         for label in labels:
             result.append(ToASCII(label))
         # Join with U+002E
-        return ".".join(result)+trailing_dot, len(input)
+        return ".".join(result) + trailing_dot, len(input)
 
-    def decode(self,input,errors='strict'):
+    def decode(self, input, errors='strict'):
 
         if errors != 'strict':
-            raise UnicodeError("Unsupported error handling "+errors)
+            raise UnicodeError("Unsupported error handling " + errors)
 
         if not input:
             return u"", 0
@@ -82,13 +83,14 @@ class Codec(codecs.Codec):
         for label in labels:
             result.append(ToUnicode(label))
 
-        return u".".join(result)+trailing_dot, len(input)
+        return u".".join(result) + trailing_dot, len(input)
+
 
 class IncrementalEncoder(codecs.BufferedIncrementalEncoder):
     def _buffer_encode(self, input, errors, final):
         if errors != 'strict':
             # IDNA is quite clear that implementations must be strict
-            raise UnicodeError("unsupported error handling "+errors)
+            raise UnicodeError("unsupported error handling " + errors)
 
         if not input:
             return ("", 0)
@@ -118,10 +120,11 @@ class IncrementalEncoder(codecs.BufferedIncrementalEncoder):
         size += len(trailing_dot)
         return (result, size)
 
+
 class IncrementalDecoder(codecs.BufferedIncrementalDecoder):
     def _buffer_decode(self, input, errors, final):
         if errors != 'strict':
-            raise UnicodeError("Unsupported error handling "+errors)
+            raise UnicodeError("Unsupported error handling " + errors)
 
         if not input:
             return (u"", 0)
@@ -158,11 +161,14 @@ class IncrementalDecoder(codecs.BufferedIncrementalDecoder):
         size += len(trailing_dot)
         return (result, size)
 
-class StreamWriter(Codec,codecs.StreamWriter):
+
+class StreamWriter(Codec, codecs.StreamWriter):
     pass
 
-class StreamReader(Codec,codecs.StreamReader):
+
+class StreamReader(Codec, codecs.StreamReader):
     pass
+
 
 ### encodings module API
 

@@ -4,7 +4,7 @@
 
 from java.util import WeakHashMap
 from java.util.Collections import newSetFromMap, synchronizedMap
-from jythonlib import set_builder, MapMaker
+from jythonlib import set_builder
 
 __all__ = ['WeakSet']
 

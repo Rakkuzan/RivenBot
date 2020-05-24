@@ -1,9 +1,12 @@
-from BotFunctions import weaponslist1, weaponslist2, runSemlar
-from datetime import timedelta
-from time import time, sleep
-from playsound import playsound
 import multiprocessing
+from datetime import timedelta
+from time import time
+
+from playsound import playsound
+
+from BotFunctions import weaponslist2, runSemlar
 from rivenmarket import Rivenmarket
+
 
 def main():
     start_time = time()

@@ -1,36 +1,36 @@
+import csv
 from datetime import timedelta
 from time import sleep, time
-from playsound import playsound
-from BotFunctions import rmkt2sem, rmkt2semWep
+
 from bs4 import BeautifulSoup
+from playsound import playsound
 from selenium import webdriver
 from selenium.webdriver.common.keys import Keys
 from selenium.webdriver.support.ui import Select
-import csv
 
 start_time = time()
 weapons = [
-        # "Kuva Bramma",
-        # "Lanka",
-        # "Rubico",
-        # "Vectis",
-        # "Corinth",
-        # "Redeemer",
-        # "Kohm",
-        # "Gram",
-        #"Opticor",
-        # "Kronen",
-        # "Catchmoon",
-        # "Nukor",
-        # "Kuva Chakkhurr",
-        # "Amprex",
-         "Shedu"#,
-        # "Acceltra"#,
-        # "Lenz",
-        # "Dread",
-        # "Plague Kripath",
-        # "Basmu"
-            ]
+    # "Kuva Bramma",
+    # "Lanka",
+    # "Rubico",
+    # "Vectis",
+    # "Corinth",
+    # "Redeemer",
+    # "Kohm",
+    # "Gram",
+    # "Opticor",
+    # "Kronen",
+    # "Catchmoon",
+    # "Nukor",
+    # "Kuva Chakkhurr",
+    # "Amprex",
+    "Shedu"  # ,
+    # "Acceltra"#,
+    # "Lenz",
+    # "Dread",
+    # "Plague Kripath",
+    # "Basmu"
+]
 
 # writing to .csv
 rmkt_csv = open("rlst_single.csv", mode='w', newline='')
@@ -106,7 +106,7 @@ for weapon in weapons:
                                   list_el["data-name"], list_el["data-price"],
                                   semlar_list[2].text, list_el["data-age"],
                                   semlar_list[1].text.split(': ')[1],
-                                 stat1, stat2, stat3, stat4])
+                                  stat1, stat2, stat3, stat4])
     rmkt_writer.writerow([])
 rmkt_csv.close()
 print("---DONE---")

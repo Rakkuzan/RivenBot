@@ -15,15 +15,12 @@ objects support decompress() and flush().
 """
 import array
 import binascii
-import jarray
 import struct
-import sys
+
+import jarray
 from cStringIO import StringIO
-
-from java.lang import Long, String, System
-from java.util.zip import Adler32, CRC32, Deflater, Inflater, DataFormatException
-
-
+from java.lang import String
+from java.util.zip import CRC32, Deflater, Inflater, DataFormatException
 
 DEFLATED = 8
 MAX_WBITS = 15
@@ -50,9 +47,9 @@ _zlib_to_deflater = {
     Z_FULL_FLUSH: Deflater.FULL_FLUSH
 }
 
+_ADLER_BASE = 65521  # largest prime smaller than 65536
+_MASK32 = 0xffffffffL  # 2**32 - 1 used for unsigned mod 2**32
 
-_ADLER_BASE = 65521     # largest prime smaller than 65536
-_MASK32 = 0xffffffffL   # 2**32 - 1 used for unsigned mod 2**32
 
 def adler32(s, value=1):
     # Although Java has an implmentation in java.util.zip.Adler32,
@@ -64,15 +61,17 @@ def adler32(s, value=1):
     s2 = (value >> 16) & 0xffff
     for c in s:
         s1 = (s1 + ord(c)) % _ADLER_BASE
-        s2 = (s2 + s1)     % _ADLER_BASE
+        s2 = (s2 + s1) % _ADLER_BASE
     # Support two's complement, to comply with the range specified for 2.6+;
     # for 3.x, simply return (s2 << 16) + s1
     high_bit = -2147483648 if (s2 & 0x8000) else 0
     remaining_high_word = s2 & 0x7fff
     return high_bit + (remaining_high_word << 16) + s1
 
+
 def crc32(string, value=0):
     return binascii.crc32(string, value)
+
 
 def compress(string, level=6):
     if level < Z_BEST_SPEED or level > Z_BEST_COMPRESSION:
@@ -85,6 +84,7 @@ def compress(string, level=6):
         return _get_deflate_data(deflater)
     finally:
         deflater.end()
+
 
 def decompress(string, wbits=0, bufsize=16384):
     inflater = Inflater(wbits < 0)
@@ -122,9 +122,8 @@ class compressobj(object):
     # int as a long, so cope accordingly. 
     GZIP_TRAILER_FORMAT = struct.Struct("<II")  # crc32, size
 
-
     def __init__(self, level=6, method=DEFLATED, wbits=MAX_WBITS,
-                       memLevel=0, strategy=0):
+                 memLevel=0, strategy=0):
         if abs(wbits) & 16:
             if wbits > 0:
                 wbits -= 16
@@ -192,7 +191,6 @@ class decompressobj(object):
         self.gzip_header_skipped = False
         self._crc32 = CRC32()
 
-
     def decompress(self, string, max_length=0):
         if self._ended:
             raise error("decompressobj may not be used after flush()")
@@ -232,7 +230,7 @@ class decompressobj(object):
         if r:
             if self.gzip and self.inflater.finished() and r == 8:
                 # Consume tail, check inflate size, and crc32
-                crc,isize = struct.unpack_from("<LL", string[-r:])
+                crc, isize = struct.unpack_from("<LL", string[-r:])
                 mysize = self.inflater.getBytesWritten() & _MASK32
                 mycrc = self._crc32.getValue() & _MASK32
                 if mysize != isize:
@@ -257,6 +255,7 @@ class decompressobj(object):
         self.inflater.end()
         return last
 
+
 def _to_input(s):
     if isinstance(s, unicode):
         return s.encode('ascii')
@@ -266,6 +265,7 @@ def _to_input(s):
         return s
     else:
         raise TypeError('must be string or read-only buffer, not %s' % type(s))
+
 
 def _get_deflate_data(deflater, mode=Z_NO_FLUSH):
     buflen = 1024
@@ -278,6 +278,7 @@ def _get_deflate_data(deflater, mode=Z_NO_FLUSH):
         s.write(String(buf, 0, 0, l))
     s.seek(0)
     return s.read()
+
 
 def _get_inflate_data(inflater, max_length=0):
     buf = jarray.zeros(1024, 'b')
@@ -303,12 +304,12 @@ def _get_inflate_data(inflater, max_length=0):
     return s.read()
 
 
-
 FTEXT = 1
 FHCRC = 2
 FEXTRA = 4
 FNAME = 8
 FCOMMENT = 16
+
 
 def _skip_gzip_header(string):
     # per format specified in https://tools.ietf.org/html/rfc1952
@@ -337,16 +338,15 @@ def _skip_gzip_header(string):
         s = s[2 + xlen:]
     if flg & FNAME:
         # skip filename
-        s = s[s.find("\x00")+1:]
+        s = s[s.find("\x00") + 1:]
     if flg & FCOMMENT:
         # skip comment
-        s = s[s.find("\x00")+1:]
+        s = s[s.find("\x00") + 1:]
     if flg & FHCRC:
         # skip CRC16 for the header - might be nice to check of course
         s = s[2:]
 
     return bytes(s)
-
 
 
 class error(Exception):

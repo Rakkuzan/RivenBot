@@ -1,8 +1,9 @@
-from selenium.webdriver.firefox.options import Options
-from selenium import webdriver
-from selenium.webdriver.support.ui import Select
-from bs4 import BeautifulSoup
 from time import sleep
+
+from bs4 import BeautifulSoup
+from selenium import webdriver
+from selenium.webdriver.firefox.options import Options
+from selenium.webdriver.support.ui import Select
 
 
 class Rivenmarket:

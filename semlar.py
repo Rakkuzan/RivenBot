@@ -1,9 +1,10 @@
-from selenium.webdriver.firefox.options import Options
-from selenium import webdriver
-from time import sleep
-from bs4 import BeautifulSoup
-from selenium.webdriver.common.keys import Keys
 import re
+from time import sleep
+
+from bs4 import BeautifulSoup
+from selenium import webdriver
+from selenium.webdriver.common.keys import Keys
+from selenium.webdriver.firefox.options import Options
 
 from writer import Writer
 
@@ -34,7 +35,7 @@ class Semlar:
         print("Opening semlar")
         self.driver = webdriver.Firefox(options=self.options)
         self.driver.get("https://semlar.com/comp")
-        sleep(1)    #TODO lepsze waity
+        sleep(1)  # TODO lepsze waity
         self.driver.execute_script("window.scrollBy(0,500)")
         sleep(1)
         print("semlar opened")
@@ -114,10 +115,10 @@ class Semlar:
         for error in [self.error1, self.error2, self.error3, self.error4]:
             if error != "":
                 self.weaponbugged = True
-                print(error+"\n"+" \""+self.stat1+"\""
-                      + " \""+self.stat2+"\""
-                      + " \""+self.stat3+"\""
-                      + " \""+self.stat4+"\"")
+                print(error + "\n" + " \"" + self.stat1 + "\""
+                      + " \"" + self.stat2 + "\""
+                      + " \"" + self.stat3 + "\""
+                      + " \"" + self.stat4 + "\"")
         return self.weaponbugged
 
     def modMeetsCriteria(self):
