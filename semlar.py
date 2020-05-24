@@ -63,7 +63,6 @@ class Semlar:
         self.stat2, self.error2 = self.__rmkt2sem(mod["data-stat2"])
         self.stat3, self.error3 = self.__rmkt2sem(mod["data-stat3"])
         self.stat4, self.error4 = self.__rmkt2sem(mod["data-stat4"])
-        print("---Scanning " + self.wepname + "---")
 
     def checkRating(self):
         # Semlar weaponname

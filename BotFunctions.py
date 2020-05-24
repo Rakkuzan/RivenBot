@@ -1,4 +1,3 @@
-import asyncio
 from semlar import Semlar
 
 

@@ -3,12 +3,9 @@ from weapons import weaponslist1, weaponslist2
 from datetime import timedelta
 from time import time
 from playsound import playsound
-import asyncio
 from rivenmarket import Rivenmarket
-from multiprocessing import Process
-import sys
+import threading
 
-sys.setrecursionlimit(50000)
 def main():
     print("yes")
     start_time = time()
@@ -16,16 +13,18 @@ def main():
     headless = False
 
     rmkt = Rivenmarket(headless)
-    processes = []
+    threads = []
     for cnt, weapon in enumerate(weapons):
+        print("---Scanning " + weapon + "---")
         rmkt.loadWeapon(weapon)
         filename = weapon + ".csv"
-        processes.append(Process(target=runSemlar, args=(headless, rmkt.list, filename,)))
-        processes[cnt].start()
+        threads.append(threading.Thread(target=runSemlar(headless, rmkt.list, filename)))
+        threads[cnt].start()
+        threads[cnt].run()
     rmkt.quit()
 
-    for process in processes:
-        process.join()
+    for thread in threads:
+        thread.join()
 
 
     print("---DONE---")
