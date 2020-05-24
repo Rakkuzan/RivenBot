@@ -1,0 +1,4 @@
+id;weapon;name;price;rating;age;sales;Buff1;Buff2;Buff3;Debuff
+riven_1427577;Brakk;Scitis;120;D;> 1 day;Uncommon;% Slash;% Critical Damage;;
+riven_1429939;Brakk;Hexatak;130;F;> 1 day;Uncommon;% Status Chance;% Reload Speed;;% Ammo Maximum
+riven_1427617;Brakk;Vexicron;150;C;> 1 day;Uncommon;% Critical Chance;% Electricity;;

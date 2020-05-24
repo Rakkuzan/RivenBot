@@ -1,21 +1,23 @@
-from BotFunctions import runBot
-from weapons import weaponslist1, weaponslist2
+from BotFunctions import weaponslist1, weaponslist2, runSemlar
 from datetime import timedelta
-from time import time
+from time import time, sleep
 from playsound import playsound
 import multiprocessing
-
-
-
+from rivenmarket import Rivenmarket
 
 def main():
     start_time = time()
     weapons = weaponslist2()
     headless = False
 
+    rmkt = Rivenmarket(headless)
     processes = []
     for weapon in weapons:
-        processes.append(multiprocessing.Process(target=runBot, args=(headless, [weapon],)))
+        print("---Scanning " + weapon + "---")
+        rmkt.loadWeapon(weapon)
+        filename = weapon + ".csv"
+        processes.append(multiprocessing.Process(target=runSemlar, args=(headless, rmkt.modlist, filename,)))
+    rmkt.quit()
 
     for process in processes:
         process.start()

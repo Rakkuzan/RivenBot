@@ -2,15 +2,6 @@ from rivenmarket import Rivenmarket
 from semlar import Semlar
 
 
-def runBot(headless, weapon):
-    rmkt = Rivenmarket(headless)
-    for cnt, weapon in enumerate(weapon):
-        print("---Scanning " + weapon + "---")
-        rmkt.loadWeapon(weapon)
-        filename = weapon + ".csv"
-        runSemlar(headless, rmkt.list, filename)
-    rmkt.quit()
-
 def runSemlar(headless, modlist, filename):
     semlar = Semlar(headless, filename)
     for mod in modlist:
@@ -24,3 +15,45 @@ def runSemlar(headless, modlist, filename):
 
     semlar.writeempty()
     semlar.quit()
+
+def weaponslist1():
+    return [
+           "Kuva Bramma",
+           "Lanka",
+           "Rubico",
+           "Vectis",
+           "Corinth",
+           "Redeemer",
+           "Kohm",
+           "Gram",
+           # "Opticor",      # uncommon
+           "Kronen",
+           "Catchmoon",
+           "Nukor",
+           "Kuva Chakkhurr",
+           # "Amprex",       # uncommon
+           "Shedu",
+           "Acceltra",
+           # "Lenz",         # uncommon
+           # "Dread",        # uncommon
+           #"Plague Kripath", # bugged
+           #"Basmu"           # uncommon
+           "Tiberon",
+           "Fulmin",
+           "Ignis",
+           "Sepfahn",
+           "Daikyu",
+           "Tombfinger",
+           "Reaper Prime",
+           "Vulkar",
+           "Baza",
+           "Brakk",
+           ]
+
+def weaponslist2():
+    return [
+           "Kuva Bramma",
+           "Lanka",
+           "Rubico",
+           "Vectis",
+           "Corinth"]

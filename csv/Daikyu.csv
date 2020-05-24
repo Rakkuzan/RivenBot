@@ -1,0 +1,10 @@
+id;weapon;name;price;rating;age;sales;Buff1;Buff2;Buff3;Debuff
+riven_1427577;Brakk;Scitis;120;Buff Popularity;> 1 day;Uncommon;% Slash;% Critical Damage;;
+riven_1429939;Brakk;Hexatak;130;D;> 1 day;Uncommon;% Status Chance;% Reload Speed;;% Ammo Maximum
+riven_1427617;Brakk;Vexicron;150;Buff Popularity;> 1 day;Uncommon;% Critical Chance;% Electricity;;
+riven_1431766;Brakk;Argiada;150;F;new;Uncommon;% Damage to Grineer;% Damage to Infested;;% Slash
+riven_1422933;Brakk;Manticon;200;F;> 1 day;Uncommon;% Damage to Grineer;% Damage to Corpus;;
+riven_1424743;Brakk;Hexa-critaata;200;B;> 1 day;Uncommon;% Status Chance;% Damage;% Critical Chance;
+riven_1430209;Brakk;Visi-cronitin;200;C-;new;Uncommon;% Fire Rate;% Magazine Capacity;% Damage;% Zoom
+riven_1431440;Brakk;Gelisus;200;F;new;Uncommon;% Cold;% Slash;;
+riven_1431156;Brakk;Croni-satibin;250;D;new;Uncommon;% Fire Rate;% Ammo Maximum;% Multishot;

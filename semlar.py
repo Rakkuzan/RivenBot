@@ -10,7 +10,7 @@ from writer import Writer
 
 class Semlar:
     def __init__(self, headless, filename):
-        # zeby mi gnoji nie podkreslalo
+        # TODO odretardzic
         self.soup = None
         self.sales = None
         self.rating = None
@@ -53,16 +53,20 @@ class Semlar:
             "/html/body/div/div[3]/div[2]/div/div[3]/button")
 
     def loadMod(self, mod):
-        self.wepid = mod["id"]
-        self.wepname = self.__rmkt2semWep(mod["data-weapon"])
-        self.weptype = mod["data-wtype"]
-        self.modname = mod["data-name"]
-        self.modprice = mod["data-price"]
-        self.modage = mod["data-age"]
-        self.stat1, self.error1 = self.__rmkt2sem(mod["data-stat1"])
-        self.stat2, self.error2 = self.__rmkt2sem(mod["data-stat2"])
-        self.stat3, self.error3 = self.__rmkt2sem(mod["data-stat3"])
-        self.stat4, self.error4 = self.__rmkt2sem(mod["data-stat4"])
+        self.wepid = mod["wepid"]
+        self.wepname = mod["wepname"]
+        self.weptype = mod["weptype"]
+        self.modname = mod["modname"]
+        self.modprice = mod["modprice"]
+        self.modage = mod["modage"]
+        self.stat1 = mod["stat1"]
+        self.stat2 = mod["stat2"]
+        self.stat3 = mod["stat3"]
+        self.stat4 = mod["stat4"]
+        self.error1 = mod["error1"]
+        self.error2 = mod["error2"]
+        self.error3 = mod["error3"]
+        self.error4 = mod["error4"]
 
     def checkRating(self):
         # Semlar weaponname
@@ -153,63 +157,3 @@ class Semlar:
             return True
         else:
             return False
-
-    @staticmethod
-    def __rmkt2semWep(wepname):
-        return {
-            "Kuva_Bramma": "Kuva Bramma",
-            "Kuva_Chakkhurr": "Kuva Chakkhurr",
-            "Plague_Kripath": "Plague Kripath",
-            "Reaper_prime": "Reaper Prime",
-            # TODO: wszystkie bronie
-        }.get(wepname, wepname)
-
-    def __rmkt2sem(self, stat):
-        error = ""
-        if stat == "Speed":
-            if self.weptype == "Melee":
-                stat += "_m"
-            else:
-                stat += "_o"
-        # BUG: semlar nie ma takiej staty jak dmg w Plague Kripath
-        if self.wepname == "Plague Kripath" and stat == "Damage":
-            stat = "Error"
-            error = "Error: Plague Kripath + Damage"
-        return {
-                   "": "",
-                   "Damage": "% Damage",
-                   "Multi": "% Multishot",
-                   "Speed_m": "% Attack Speed",
-                   "Speed_o": "% Fire Rate",
-                   "Corpus": "% Damage to Corpus",
-                   "Grineer": "% Damage to Grineer",
-                   "Infested": "% Damage to Infested",
-                   "Impact": "% Impact",
-                   "Puncture": "% Puncture",
-                   "Slash": "% Slash",
-                   "Cold": "% Cold",
-                   "Electric": "% Electricity",
-                   "Heat": "% Heat",
-                   "Toxin": "Toxin",
-                   "ChannelDmg": "% Channeling Damage",
-                   "ChannelEff": "% Channeling Efficiency",
-                   "Combo": "Combo Duration",
-                   "CritChance": "% Critical Chance",
-                   "Slide": "% Critical Chance for Slide Attack",
-                   "CritDmg": "% Critical Damage",
-                   "Finisher": "% Finisher Damage",
-                   "Flight": "% Projectile Speed",
-                   "Ammo": "% Ammo Maximum",
-                   "Punch": "Punch Through",
-                   "Reload": "% Reload Speed",
-                   "Range": "Range",
-                   "StatusC": "% Status Chance",
-                   "StatusD": "% Status Duration",
-                   "Recoil": "% Weapon Recoil",
-                   "Zoom": "% Zoom",
-                   "InitC": "Initial Combo",
-                   "ComboEfficiency": "% Melee Combo Efficiency",
-                   "ComboGainExtra": "% Additional Combo Count Chance",
-                   "ComboGainLost": "% Chance to Gain Combo Count",
-                   "Magazine": "% Magazine Capacity"
-               }.get(stat, "Error"), error
