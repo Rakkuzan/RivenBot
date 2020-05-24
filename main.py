@@ -1,9 +1,7 @@
 import multiprocessing
 from datetime import timedelta
 from time import time
-
 from playsound import playsound
-
 from BotFunctions import weaponslist1, weaponslist2, runSemlar
 from rivenmarket import Rivenmarket
 
