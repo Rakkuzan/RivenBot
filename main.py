@@ -4,14 +4,14 @@ from time import time
 
 from playsound import playsound
 
-from BotFunctions import weaponslist2, runSemlar
+from BotFunctions import weaponslist1, weaponslist2, runSemlar
 from rivenmarket import Rivenmarket
 
 
 def main():
     start_time = time()
     weapons = weaponslist2()
-    headless = False
+    headless = True
 
     rmkt = Rivenmarket(headless)
     processes = []
