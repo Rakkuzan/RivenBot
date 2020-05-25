@@ -5,11 +5,11 @@ from time import time
 from playsound import playsound
 from BotFunctions import runSemlar
 from rivenmarket import Rivenmarket
-from weapons import weaponslist1, weaponslist2
+from weapons import weaponsList
 
-headless = True
-max_processes = 6
-weapons = weaponslist2()
+headless = False
+max_processes = 8
+weapons = weaponsList()
 
 def main():
     start_time = time()

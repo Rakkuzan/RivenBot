@@ -1,8 +1,12 @@
 id;weapon;name;price;rating;age;sales;Buff1;Buff2;Buff3;Debuff
 riven_1430208;Corinth;Ignitron;150;F;> 1 day;Common;% Damage to Corpus;% Heat;;
+riven_1433491;Corinth;Decibin;170;F;new;Common;% Ammo Maximum;% Status Duration;;% Critical Damage
+riven_1433553;Corinth;Acritio;180;C;new;Common;% Electricity;% Critical Damage;;
+riven_1433554;Corinth;Acritio;180;C;new;Common;% Electricity;% Critical Damage;;
 riven_1433030;Corinth;Concipha;190;F;new;Common;% Projectile Speed;% Heat;;
+riven_1423782;Corinth;Lexitio;200;F;> 1 day;Common;Punch Through;% Electricity;;% Weapon Recoil
 riven_1433032;Corinth;Manti-hexadra;200;F;new;Common;% Damage to Corpus;% Fire Rate;% Status Chance;
-riven_1423782;Corinth;Lexitio;230;F;> 1 day;Common;Punch Through;% Electricity;;% Weapon Recoil
+riven_1433433;Corinth;Visitio;200;C-;new;Common;% Electricity;% Damage;;% Reload Speed
 riven_1432583;Corinth;Ignido;230;F;new;Common;% Cold;% Heat;;
 riven_1431134;Corinth;Acrican;249;A;> 1 day;Common;% Critical Damage;% Multishot;;
 riven_1426804;Corinth;Toxitin;250;F;> 1 day;Common;Toxin;% Magazine Capacity;;
@@ -12,7 +16,6 @@ riven_1432705;Corinth;Mantipha;270;F;new;Common;% Heat;% Damage to Corpus;;% Rel
 riven_1424914;Corinth;Vexi-insitron;299;F;> 1 day;Common;% Electricity;% Damage to Corpus;% Puncture;% Magazine Capacity
 riven_1426503;Corinth;Acritox;300;C;> 1 day;Common;% Critical Damage;Toxin;;% Damage to Infested
 riven_1427006;Corinth;Satidex;300;B-;> 1 day;Common;% Status Chance;% Multishot;;
-riven_1423638;Corinth;Pura-critatis;350;B-;> 1 day;Common;% Damage to Infested;% Critical Damage;% Critical Chance;
 riven_1424225;Corinth;Sati-insiata;350;B;> 1 day;Common;% Puncture;% Damage;% Multishot;
 riven_1426814;Corinth;Vexitis;350;C;> 1 day;Common;% Electricity;% Critical Damage;;
 riven_1429211;Corinth;Conci-hexatis;350;D;> 1 day;Common;% Critical Damage;% Projectile Speed;% Status Chance;
@@ -20,6 +23,8 @@ riven_1424168;Corinth;Satipha;390;C+;> 1 day;Common;% Heat;% Multishot;;
 riven_1424971;Corinth;Sati-fevatis;400;C;> 1 day;Common;% Multishot;% Critical Damage;% Reload Speed;% Projectile Speed
 riven_1425935;Corinth;Crita-acrinok;400;C;> 1 day;Common;% Critical Chance;% Critical Damage;Punch Through;% Reload Speed
 riven_1431422;Corinth;Visi-lexidra;400;D;> 1 day;Common;% Fire Rate;% Damage;Punch Through;% Status Chance
+riven_1433484;Corinth;Vexi-satiata;400;B-;new;Common;% Electricity;% Damage;% Multishot;% Magazine Capacity
+riven_1433390;Corinth;Arma-critacan;450;B;new;Common;% Multishot;% Critical Chance;% Magazine Capacity;% Ammo Maximum
 riven_1423944;Corinth;Critado;490;C;> 1 day;Common;% Critical Chance;% Cold;;% Puncture
 riven_1426668;Corinth;Vexi-saticron;500;B;> 1 day;Common;% Electricity;% Critical Chance;% Multishot;
 riven_1428352;Corinth;Acriata;500;A-;> 1 day;Common;% Critical Damage;% Damage;;% Puncture
@@ -36,7 +41,7 @@ riven_1431408;Corinth;Hexa-critacan;850;C+;> 1 day;Common;% Multishot;% Status C
 riven_1426350;Corinth;Visican;900;A-;> 1 day;Common;% Multishot;% Damage;;% Magazine Capacity
 riven_1428242;Corinth;Igni-acricron;1000;B-;> 1 day;Common;% Critical Chance;% Critical Damage;% Heat;% Damage to Infested
 riven_1429105;Corinth;Toxi-critacan;1200;B+;> 1 day;Common;% Critical Chance;% Multishot;Toxin;
-riven_1432051;Corinth;Insi-acricron;1200;C;new;Common;% Critical Damage;% Critical Chance;% Puncture;% Status Duration
+riven_1432051;Corinth;Insi-acricron;1200;C;> 1 day;Common;% Critical Damage;% Critical Chance;% Puncture;% Status Duration
 riven_1432703;Corinth;Vexi-critacan;1200;B+;new;Common;% Multishot;% Critical Chance;% Electricity;% Impact
 riven_1424165;Corinth;Visi-satipha;1390;B;> 1 day;Common;% Heat;% Damage;% Multishot;
 riven_1423957;Corinth;Crita-fevacan;2000;B;> 1 day;Common;% Reload Speed;% Critical Chance;% Multishot;% Weapon Recoil

@@ -1,42 +1,40 @@
-def weaponslist1():
+def weaponsList():
+    weaponlist = []
+    weaponlist.extend(weaponsPrimary())
+    weaponlist.extend(weaponsSecondary())
+    weaponlist.extend(weaponsMelee())
+    return weaponlist
+
+def weaponsPrimary():
     return [
-        "Kuva Bramma",
-        "Lanka",
-        "Rubico",
-        "Vectis",
-        "Corinth",
-        "Redeemer",
-        "Kohm",
-        "Gram",
-        # "Opticor",      # uncommon
-        "Kronen",
-        "Catchmoon",
-        "Nukor",
-        "Kuva Chakkhurr",
-        # "Amprex",       # uncommon
-        "Shedu",
-        "Acceltra",
-        # "Lenz",         # uncommon
-        # "Dread",        # uncommon
-        # "Plague Kripath", # bugged
-        # "Basmu"           # uncommon
-        "Tiberon",
-        "Fulmin",
-        "Ignis",
-        "Sepfahn",
-        "Daikyu",
-        "Tombfinger",
-        "Reaper Prime",
-        "Vulkar",
-        "Baza",
-        "Brakk",
+        # S tier
+        "Kuva Bramma",  # Very Common
+        "Kohm",  # Very Common
+        "Acceltra",  # Common
+        # A tier
+        "Rubico",  # Very Common
+        "Ignis",  # Common
+        "Fulmin",  # Common
+        "Corinth",  # Common
+        "Kuva Chakkhurr",  # Common
+        "Vectis",  # Common
+        "Kohm",  # Very Common
     ]
 
-
-def weaponslist2():
+def weaponsSecondary():
     return [
-        "Kuva Bramma",
-        "Lanka",
-        "Rubico",
-        "Vectis",
-        "Corinth"]
+        # S Tier
+        "Nukor",  # Common
+        "Catchmoon",  # Common
+    ]
+
+def weaponsMelee():
+    return [
+        # S Tier
+        #  "Redeemer", # bugged
+        "Kronen",
+        "Gram",
+        #  "Sepfahn", # bugged
+        "Dokrahm",
+        "Pennant",
+    ]

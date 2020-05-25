@@ -1,26 +1,64 @@
 id;weapon;name;price;rating;age;sales;Buff1;Buff2;Buff3;Debuff
-riven_1427577;Brakk;Scitis;80;D;> 1 day;Uncommon;% Slash;% Critical Damage;;
-riven_1431440;Brakk;Gelisus;110;F;> 1 day;Uncommon;% Cold;% Slash;;
-riven_1429939;Brakk;Hexatak;130;F;> 1 day;Uncommon;% Status Chance;% Reload Speed;;% Ammo Maximum
-riven_1432386;Brakk;Acri-hexatron;130;D;new;Uncommon;% Critical Damage;% Status Chance;% Damage to Corpus;
-riven_1430209;Brakk;Visi-cronitin;150;C-;> 1 day;Uncommon;% Fire Rate;% Magazine Capacity;% Damage;% Zoom
-riven_1431766;Brakk;Argiada;150;F;> 1 day;Uncommon;% Damage to Grineer;% Damage to Infested;;% Slash
-riven_1432480;Brakk;Feva-critabin;150;D;new;Uncommon;% Ammo Maximum;% Critical Chance;% Reload Speed;% Fire Rate
-riven_1433059;Brakk;Vexi-cronido;180;F;new;Uncommon;% Electricity;% Cold;% Fire Rate;
-riven_1424743;Brakk;Hexa-critaata;200;B;> 1 day;Uncommon;% Status Chance;% Damage;% Critical Chance;
-riven_1429871;Brakk;Fevaata;200;C+;> 1 day;Uncommon;% Damage;% Reload Speed;;% Impact
-riven_1431156;Brakk;Croni-satibin;250;D;> 1 day;Uncommon;% Fire Rate;% Ammo Maximum;% Multishot;
-riven_1429576;Brakk;Feva-critacan;275;C;> 1 day;Uncommon;% Critical Chance;% Multishot;% Reload Speed;
-riven_1427937;Brakk;Hexa-critatio;350;D;> 1 day;Uncommon;% Status Chance;% Critical Chance;% Electricity;% Fire Rate
-riven_1427108;Brakk;Toxi-acritio;450;D;> 1 day;Uncommon;Toxin;% Critical Damage;% Electricity;% Damage to Corpus
-riven_1431213;Brakk;Sciata;500;B-;> 1 day;Uncommon;% Slash;% Damage;;% Zoom
-riven_1432469;Brakk;Visitis;500;B;new;Uncommon;% Damage;% Critical Damage;;% Ammo Maximum
-riven_1425868;Brakk;Geli-visicron;600;C+;> 1 day;Uncommon;% Cold;% Damage;% Critical Chance;% Status Duration
-riven_1431214;Brakk;Crita-visisus;750;B+;> 1 day;Uncommon;% Slash;% Critical Chance;% Damage;% Damage to Infested
-riven_1431480;Brakk;Visi-vexitox;1000;C-;> 1 day;Uncommon;% Electricity;Toxin;% Damage;% Status Duration
-riven_1432200;Brakk;Satiata;1600;A+;new;Uncommon;% Damage;% Multishot;;% Zoom
-riven_1429183;Brakk;Visican;1999;A-;> 1 day;Uncommon;% Damage;% Multishot;;% Magazine Capacity
-riven_1429392;Brakk;Sati-lexicron;2800;B-;> 1 day;Uncommon;% Multishot;Punch Through;% Critical Chance;% Impact
-riven_1430084;Brakk;Acri-satitox;3000;B-;> 1 day;Uncommon;% Critical Damage;% Multishot;Toxin;% Impact
-riven_1425019;Brakk;Sati-critatis;5000;A;> 1 day;Uncommon;% Critical Chance;% Critical Damage;% Multishot;% Weapon Recoil
+riven_1428434;Kuva Chakkhurr;Concitis;150;C-;> 1 day;Common;% Critical Damage;% Projectile Speed;;
+riven_1433349;Kuva Chakkhurr;Toxido;150;Buff Popularity;new;Common;% Cold;Toxin;;% Damage
+riven_1433455;Kuva Chakkhurr;Concinok;150;F;new;Common;Punch Through;% Projectile Speed;;% Zoom
+riven_1426896;Kuva Chakkhurr;Lexi-croniada;160;F;> 1 day;Common;% Damage to Infested;Punch Through;% Fire Rate;
+riven_1433413;Kuva Chakkhurr;Critatron;170;C+;new;Common;% Critical Chance;% Damage to Corpus;;
+riven_1425254;Kuva Chakkhurr;Acripha;200;C;> 1 day;Common;% Critical Damage;% Heat;;
+riven_1427894;Kuva Chakkhurr;Armatron;200;F;> 1 day;Common;% Damage to Corpus;% Magazine Capacity;;
+riven_1431801;Kuva Chakkhurr;Hexa-ignibin;220;F;> 1 day;Common;% Ammo Maximum;% Heat;% Status Chance;
+riven_1427951;Kuva Chakkhurr;Lexitin;225;F;> 1 day;Common;Punch Through;% Magazine Capacity;;% Critical Chance
+riven_1432681;Kuva Chakkhurr;Hexaton;225;F;new;Common;% Status Chance;% Impact;;
+riven_1431653;Kuva Chakkhurr;Ampitis;250;D;> 1 day;Common;% Ammo Maximum;% Critical Damage;;% Damage to Grineer
+riven_1432023;Kuva Chakkhurr;Visican;270;C+;> 1 day;Common;% Damage;% Multishot;;
+riven_1424713;Kuva Chakkhurr;Crita-lexidex;300;C-;> 1 day;Common;% Status Chance;Punch Through;% Critical Chance;% Status Duration
+riven_1429099;Kuva Chakkhurr;Croni-hexaata;300;D;> 1 day;Common;% Damage;% Fire Rate;% Status Chance;% Damage to Infested
+riven_1431785;Kuva Chakkhurr;Croni-lexides;300;F;> 1 day;Common;% Status Duration;% Fire Rate;Punch Through;
+riven_1432743;Kuva Chakkhurr;Toxi-critado;300;C;new;Common;Toxin;% Critical Chance;% Cold;% Impact
+riven_1423945;Kuva Chakkhurr;Acripha;350;C;> 1 day;Common;% Critical Damage;% Heat;;
+riven_1426916;Kuva Chakkhurr;Critapha;350;B-;> 1 day;Common;% Heat;% Critical Chance;;
+riven_1427671;Kuva Chakkhurr;Critacan;350;C+;> 1 day;Common;% Multishot;% Critical Chance;;% Fire Rate
+riven_1431402;Kuva Chakkhurr;Vexicron;350;B-;> 1 day;Common;% Critical Chance;% Electricity;;
+riven_1433524;Kuva Chakkhurr;Lexi-visicron;350;B;new;Common;% Critical Chance;Punch Through;% Damage;
+riven_1428721;Kuva Chakkhurr;Acri-satitox;380;C-;> 1 day;Common;% Multishot;% Critical Damage;Toxin;% Damage to Grineer
+riven_1431193;Kuva Chakkhurr;Visi-satidex;399;C;> 1 day;Common;% Damage;% Multishot;% Status Chance;
+riven_1423717;Kuva Chakkhurr;Acri-satipha;400;C+;> 1 day;Common;% Multishot;% Critical Damage;% Heat;
+riven_1425190;Kuva Chakkhurr;Critaata;400;A;> 1 day;Common;% Critical Chance;% Damage;;
+riven_1430775;Kuva Chakkhurr;Croni-critacon;400;C-;> 1 day;Common;% Critical Chance;% Fire Rate;% Damage to Grineer;% Weapon Recoil
+riven_1432021;Kuva Chakkhurr;Crita-acrilis;400;B;> 1 day;Common;% Critical Chance;% Critical Damage;% Zoom;
+riven_1433454;Kuva Chakkhurr;Arma-igniata;400;D;new;Common;% Damage;% Magazine Capacity;% Heat;% Reload Speed
+riven_1432268;Kuva Chakkhurr;Critapha;450;C-;new;Common;% Critical Chance;% Heat;;% Reload Speed
+riven_1423767;Kuva Chakkhurr;Croniata;500;D;> 1 day;Common;% Damage;% Fire Rate;;% Damage to Grineer
+riven_1426424;Kuva Chakkhurr;Acri-ampican;500;C;> 1 day;Common;% Multishot;% Ammo Maximum;% Critical Damage;
+riven_1427331;Kuva Chakkhurr;Lexitin;500;F;> 1 day;Common;% Magazine Capacity;Punch Through;;
+riven_1428020;Kuva Chakkhurr;Acridra;500;D;> 1 day;Common;% Fire Rate;% Critical Damage;;% Status Chance
+riven_1433521;Kuva Chakkhurr;Crita-armacan;500;B-;new;Common;% Critical Chance;% Multishot;% Magazine Capacity;% Impact
+riven_1426018;Kuva Chakkhurr;Visido;600;D;> 1 day;Common;% Damage;% Cold;;% Weapon Recoil
+riven_1428243;Kuva Chakkhurr;Acri-satitak;600;C;> 1 day;Common;% Critical Damage;% Reload Speed;% Multishot;% Damage to Infested
+riven_1428244;Kuva Chakkhurr;Acri-satitak;600;C;> 1 day;Common;% Critical Damage;% Reload Speed;% Multishot;% Damage to Infested
+riven_1430893;Kuva Chakkhurr;Acri-gelidex;600;D;> 1 day;Common;% Status Chance;% Cold;% Critical Damage;% Damage to Corpus
+riven_1433259;Kuva Chakkhurr;Satiata;650;C+;new;Common;% Damage;% Multishot;;% Ammo Maximum
+riven_1431918;Kuva Chakkhurr;Acrican;750;C+;> 1 day;Common;% Multishot;% Critical Damage;;% Damage to Corpus
+riven_1432193;Kuva Chakkhurr;Croni-acricron;750;B;new;Common;% Fire Rate;% Critical Chance;% Critical Damage;
+riven_1432310;Kuva Chakkhurr;Hexa-satiata;800;C;new;Common;% Multishot;% Damage;% Status Chance;
+riven_1432942;Kuva Chakkhurr;Igni-acricron;800;B+;new;Common;% Critical Damage;% Heat;% Critical Chance;% Impact
+riven_1427240;Kuva Chakkhurr;Critacan;899;B+;> 1 day;Common;% Critical Chance;% Multishot;;% Damage to Infested
+riven_1423968;Kuva Chakkhurr;Critatis;1000;A;> 1 day;Common;% Critical Chance;% Critical Damage;;
+riven_1425091;Kuva Chakkhurr;Critacan;1000;B+;> 1 day;Common;% Multishot;% Critical Chance;;% Ammo Maximum
+riven_1430434;Kuva Chakkhurr;Toxiton;1000;F;> 1 day;Common;Toxin;% Impact;;
+riven_1428018;Kuva Chakkhurr;Acri-visipha;1100;C+;> 1 day;Common;% Critical Damage;% Damage;% Heat;% Weapon Recoil
+riven_1427242;Kuva Chakkhurr;Crita-vexican;1199;B-;> 1 day;Common;% Critical Chance;% Multishot;% Electricity;% Damage to Corpus
+riven_1426168;Kuva Chakkhurr;Ignicron;1200;B-;> 1 day;Common;% Heat;% Critical Chance;;
+riven_1429958;Kuva Chakkhurr;Critatis;1400;Buff Popularity;> 1 day;Common;% Critical Chance;% Critical Damage;;% Fire Rate
+riven_1430943;Kuva Chakkhurr;Visi-vexican;1500;D;> 1 day;Common;% Multishot;% Electricity;% Damage;% Fire Rate
+riven_1432185;Kuva Chakkhurr;Acri-ignicron;1500;B+;new;Common;% Heat;% Critical Damage;% Critical Chance;% Ammo Maximum
+riven_1425189;Kuva Chakkhurr;Acri-critadra;1650;B;> 1 day;Common;% Fire Rate;% Critical Chance;% Critical Damage;% Ammo Maximum
+riven_1428025;Kuva Chakkhurr;Visi-critabin;2000;C;> 1 day;Common;% Critical Chance;% Ammo Maximum;% Damage;% Projectile Speed
+riven_1427312;Kuva Chakkhurr;Visicron;2200;A-;> 1 day;Common;% Critical Chance;% Damage;;% Weapon Recoil
+riven_1427199;Kuva Chakkhurr;Sati-visicron;2400;A-;> 1 day;Common;% Multishot;% Damage;% Critical Chance;
+riven_1429922;Kuva Chakkhurr;Visi-acrican;3490;B;> 1 day;Common;% Damage;% Multishot;% Critical Damage;% Weapon Recoil
+riven_1424746;Kuva Chakkhurr;Toxi-acriata;3500;C+;> 1 day;Common;% Critical Damage;Toxin;% Damage;% Impact
+riven_1431790;Kuva Chakkhurr;Crita-acriata;3500;A-;> 1 day;Common;% Damage;% Critical Chance;% Critical Damage;% Weapon Recoil
+riven_1431814;Kuva Chakkhurr;Acri-visican;5000;B;> 1 day;Common;% Multishot;% Damage;% Critical Damage;% Impact
+riven_1431815;Kuva Chakkhurr;Acri-visican;5000;B;> 1 day;Common;% Multishot;% Damage;% Critical Damage;% Impact
 

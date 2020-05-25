@@ -91,7 +91,7 @@ class Semlar:
         self.semlar_debuffs.send_keys(self.stat4)
         self.semlar_debuffs.send_keys(Keys.ENTER)
         self.semlar_cmp.click()
-        sleep(0.1)  # TODO lepsze czekanie
+        sleep(0.1)  # TODO lepsze czekanie bo wyjebuje sie na tym czasami
         self.soup = BeautifulSoup(self.driver.page_source, "lxml")
         self.rating = self.soup.find(
             "h1", attrs={"style": re.compile("color: rgb\([0-9]+, [0-9]+, [0-9]+\)")}).text

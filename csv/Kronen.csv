@@ -1,26 +1,111 @@
 id;weapon;name;price;rating;age;sales;Buff1;Buff2;Buff3;Debuff
-riven_1427577;Brakk;Scitis;80;D;> 1 day;Uncommon;% Slash;% Critical Damage;;
-riven_1431440;Brakk;Gelisus;110;F;> 1 day;Uncommon;% Cold;% Slash;;
-riven_1429939;Brakk;Hexatak;130;F;> 1 day;Uncommon;% Status Chance;% Reload Speed;;% Ammo Maximum
-riven_1432386;Brakk;Acri-hexatron;130;D;new;Uncommon;% Critical Damage;% Status Chance;% Damage to Corpus;
-riven_1430209;Brakk;Visi-cronitin;150;C-;> 1 day;Uncommon;% Fire Rate;% Magazine Capacity;% Damage;% Zoom
-riven_1431766;Brakk;Argiada;150;F;> 1 day;Uncommon;% Damage to Grineer;% Damage to Infested;;% Slash
-riven_1432480;Brakk;Feva-critabin;150;D;new;Uncommon;% Ammo Maximum;% Critical Chance;% Reload Speed;% Fire Rate
-riven_1433059;Brakk;Vexi-cronido;180;F;new;Uncommon;% Electricity;% Cold;% Fire Rate;
-riven_1424743;Brakk;Hexa-critaata;200;B;> 1 day;Uncommon;% Status Chance;% Damage;% Critical Chance;
-riven_1429871;Brakk;Fevaata;200;C+;> 1 day;Uncommon;% Damage;% Reload Speed;;% Impact
-riven_1431156;Brakk;Croni-satibin;250;D;> 1 day;Uncommon;% Fire Rate;% Ammo Maximum;% Multishot;
-riven_1429576;Brakk;Feva-critacan;275;C;> 1 day;Uncommon;% Critical Chance;% Multishot;% Reload Speed;
-riven_1427937;Brakk;Hexa-critatio;350;D;> 1 day;Uncommon;% Status Chance;% Critical Chance;% Electricity;% Fire Rate
-riven_1427108;Brakk;Toxi-acritio;450;D;> 1 day;Uncommon;Toxin;% Critical Damage;% Electricity;% Damage to Corpus
-riven_1431213;Brakk;Sciata;500;B-;> 1 day;Uncommon;% Slash;% Damage;;% Zoom
-riven_1432469;Brakk;Visitis;500;B;new;Uncommon;% Damage;% Critical Damage;;% Ammo Maximum
-riven_1425868;Brakk;Geli-visicron;600;C+;> 1 day;Uncommon;% Cold;% Damage;% Critical Chance;% Status Duration
-riven_1431214;Brakk;Crita-visisus;750;B+;> 1 day;Uncommon;% Slash;% Critical Chance;% Damage;% Damage to Infested
-riven_1431480;Brakk;Visi-vexitox;1000;C-;> 1 day;Uncommon;% Electricity;Toxin;% Damage;% Status Duration
-riven_1432200;Brakk;Satiata;1600;A+;new;Uncommon;% Damage;% Multishot;;% Zoom
-riven_1429183;Brakk;Visican;1999;A-;> 1 day;Uncommon;% Damage;% Multishot;;% Magazine Capacity
-riven_1429392;Brakk;Sati-lexicron;2800;B-;> 1 day;Uncommon;% Multishot;Punch Through;% Critical Chance;% Impact
-riven_1430084;Brakk;Acri-satitox;3000;B-;> 1 day;Uncommon;% Critical Damage;% Multishot;Toxin;% Impact
-riven_1425019;Brakk;Sati-critatis;5000;A;> 1 day;Uncommon;% Critical Chance;% Critical Damage;% Multishot;% Weapon Recoil
+riven_1424623;Kronen;Visitox;500;F;> 1 day;Very Common;% Damage;Toxin;;
+riven_1432891;Kronen;Scitox;500;F;new;Very Common;% Slash;Toxin;;
+riven_1432378;Kronen;Argi-fortitis;585;D;new;Very Common;% Critical Damage;% Melee Combo Efficiency;% Damage to Grineer;% Finisher Damage
+riven_1433166;Kronen;Sci-lacidra;599;F;new;Very Common;% Additional Combo Count Chance;% Slash;% Attack Speed;% Critical Chance
+riven_1426619;Kronen;Visi-acrinent;600;F;> 1 day;Very Common;% Critical Damage;% Critical Chance for Slide Attack;% Damage;
+riven_1426996;Kronen;Vexi-visicron;600;D;> 1 day;Very Common;% Critical Chance;% Damage;% Electricity;
+riven_1432037;Kronen;Vexitor;600;D;> 1 day;Very Common;Range;% Electricity;;% Finisher Damage
+riven_1430021;Kronen;Gelicron;650;C+;> 1 day;Very Common;% Cold;% Critical Chance;;% Damage to Corpus
+riven_1427367;Kronen;Visi-loctipha;700;F;> 1 day;Very Common;% Heat;Range;% Damage;
+riven_1427373;Kronen;Croniata;700;F;> 1 day;Very Common;% Damage;% Attack Speed;;% Status Duration
+riven_1428106;Kronen;Geli-cronidex;700;D;> 1 day;Very Common;% Attack Speed;% Cold;% Status Chance;% Melee Combo Efficiency
+riven_1428694;Kronen;Tempitor;700;D;> 1 day;Very Common;Combo Duration;Range;;% Melee Combo Efficiency
+riven_1431009;Kronen;Para-vexidra;700;D;> 1 day;Very Common;% Electricity;Initial Combo;% Attack Speed;% Finisher Damage
+riven_1430794;Kronen;Acri-visidex;750;F;> 1 day;Very Common;% Status Chance;% Damage;% Critical Damage;
+riven_1424749;Kronen;Visicron;800;C;> 1 day;Very Common;% Critical Chance;% Damage;;% Damage to Corpus
+riven_1425978;Kronen;Locti-critatox;800;C-;> 1 day;Very Common;% Critical Chance;Range;Toxin;Combo Duration
+riven_1426292;Kronen;Crita-locticon;800;D;> 1 day;Very Common;% Damage to Grineer;% Critical Chance;Range;
+riven_1427529;Kronen;Critaata;800;D;> 1 day;Very Common;% Critical Chance;% Damage;;
+riven_1430430;Kronen;Critatio;800;D;> 1 day;Very Common;% Critical Chance;% Electricity;;% Attack Speed
+riven_1431013;Kronen;Geli-visidra;800;F;> 1 day;Very Common;% Damage;% Attack Speed;% Cold;
+riven_1431569;Kronen;Acrido;800;D;> 1 day;Very Common;% Cold;% Critical Damage;;
+riven_1432803;Kronen;Visi-hexator;800;F;new;Very Common;% Status Chance;Range;% Damage;
+riven_1433188;Kronen;Crita-cronicon;820;C+;new;Very Common;% Attack Speed;% Critical Chance;% Damage to Grineer;% Critical Chance for Slide Attack
+riven_1433546;Kronen;Acri-visitor;850;D;new;Very Common;% Critical Damage;% Damage;Range;
+riven_1431308;Kronen;Acritor;900;B;> 1 day;Very Common;Range;% Critical Damage;;% Damage to Infested
+riven_1431323;Kronen;Gelitis;900;C-;> 1 day;Very Common;% Critical Damage;% Cold;;% Damage to Corpus
+riven_1431995;Kronen;Critadra;900;B;> 1 day;Very Common;% Critical Chance;% Attack Speed;;% Damage to Corpus
+riven_1427070;Kronen;Crita-igniata;940;C-;> 1 day;Very Common;% Heat;% Critical Chance;% Damage;% Damage to Corpus
+riven_1431771;Kronen;Croni-gelitis;950;D;> 1 day;Very Common;% Cold;% Critical Damage;% Attack Speed;
+riven_1423730;Kronen;Croni-lacitio;1000;F;> 1 day;Very Common;% Attack Speed;% Additional Combo Count Chance;% Electricity;% Critical Chance
+riven_1424635;Kronen;Visi-croninem;1000;F;> 1 day;Very Common;% Damage;% Attack Speed;Combo Duration;
+riven_1430954;Kronen;Deci-visido;1000;F;> 1 day;Very Common;% Cold;% Status Duration;% Damage;% Critical Chance for Slide Attack
+riven_1432154;Kronen;Acritor;1000;C-;new;Very Common;Range;% Critical Damage;;% Slash
+riven_1432341;Kronen;Visi-gelicron;1000;D;new;Very Common;% Cold;% Critical Chance;% Damage;
+riven_1432624;Kronen;Gelitis;1000;D;new;Very Common;% Cold;% Critical Damage;;
+riven_1432827;Kronen;Crita-acridra;1000;C-;new;Very Common;% Attack Speed;% Critical Chance;% Critical Damage;
+riven_1433040;Kronen;Pleci-tempitox;1000;F;new;Very Common;Combo Duration;% Critical Chance for Slide Attack;Toxin;% Damage to Corpus
+riven_1433443;Kronen;Exi-visicron;1000;F;new;Very Common;% Critical Chance;% Damage;% Finisher Damage;
+riven_1433504;Kronen;Visi-acrido;1000;F;new;Very Common;% Critical Damage;% Damage;% Cold;
+riven_1433509;Kronen;Visi-acrido;1000;F;new;Very Common;% Critical Damage;% Damage;% Cold;
+riven_1429974;Kronen;Crita-acrinent;1050;B-;> 1 day;Very Common;% Critical Chance for Slide Attack;% Critical Damage;% Critical Chance;% Melee Combo Efficiency
+riven_1427492;Kronen;Acri-locticron;1100;C-;> 1 day;Very Common;% Critical Damage;Range;% Critical Chance;
+riven_1428747;Kronen;Acri-gelidex;1100;C;> 1 day;Very Common;% Cold;% Critical Damage;% Status Chance;% Damage to Infested
+riven_1428815;Kronen;Visi-loctidex;1100;D;> 1 day;Very Common;% Damage;Range;% Status Chance;% Critical Chance for Slide Attack
+riven_1430589;Kronen;Critatox;1100;B;> 1 day;Very Common;Toxin;% Critical Chance;;% Critical Chance for Slide Attack
+riven_1430619;Kronen;Visi-tempicron;1100;D;> 1 day;Very Common;% Damage;% Critical Chance;Combo Duration;
+riven_1425520;Kronen;Acri-vexiata;1200;F;> 1 day;Very Common;% Critical Damage;% Electricity;% Damage;
+riven_1428026;Kronen;Crita-ignisus;1200;D;> 1 day;Very Common;% Slash;% Critical Chance;% Heat;
+riven_1428246;Kronen;Acridra;1200;C;> 1 day;Very Common;% Critical Damage;% Attack Speed;;% Status Duration
+riven_1431355;Kronen;Croni-acritio;1200;D;> 1 day;Very Common;% Attack Speed;% Critical Damage;% Electricity;
+riven_1432006;Kronen;Croniata;1200;D;> 1 day;Very Common;% Damage;% Attack Speed;;% Damage to Infested
+riven_1432116;Kronen;Acritor;1200;B;> 1 day;Very Common;% Critical Damage;Range;;% Damage to Infested
+riven_1426206;Kronen;Gelidra;1300;D;> 1 day;Very Common;% Attack Speed;% Cold;;% Damage to Infested
+riven_1427114;Kronen;Visi-gelicron;1300;C-;> 1 day;Very Common;% Cold;% Critical Chance;% Damage;% Damage to Corpus
+riven_1432010;Kronen;Acri-manticron;1300;Buff Popularity;> 1 day;Very Common;% Damage to Corpus;% Critical Chance;% Critical Damage;% Finisher Damage
+riven_1426983;Kronen;Loctidra;1350;C-;> 1 day;Very Common;% Attack Speed;Range;;% Critical Chance for Slide Attack
+riven_1428022;Kronen;Crita-mantitis;1400;B+;> 1 day;Very Common;% Critical Damage;% Damage to Corpus;% Critical Chance;% Finisher Damage
+riven_1429503;Kronen;Crita-vexiata;1400;D;> 1 day;Very Common;% Critical Chance;% Electricity;% Damage;% Melee Combo Efficiency
+riven_1430811;Kronen;Visitor;1400;F;> 1 day;Very Common;Range;% Damage;;% Damage to Grineer
+riven_1432955;Kronen;Crita-vexitor;1499;B-;new;Very Common;Range;% Electricity;% Critical Chance;% Finisher Damage
+riven_1425278;Kronen;Cronitis;1500;C;> 1 day;Very Common;% Critical Damage;% Attack Speed;;% Damage to Grineer
+riven_1425555;Kronen;Crita-plecidex;1500;D;> 1 day;Very Common;% Status Chance;% Critical Chance;% Critical Chance for Slide Attack;
+riven_1428287;Kronen;Sci-loctitis;1500;C+;> 1 day;Very Common;% Critical Damage;Range;% Slash;% Damage to Infested
+riven_1430949;Kronen;Critadex;1500;B-;> 1 day;Very Common;% Status Chance;% Critical Chance;;% Damage to Corpus
+riven_1430961;Kronen;Acritor;1500;D;> 1 day;Very Common;% Critical Damage;Range;;% Attack Speed
+riven_1431116;Kronen;Crita-loctidra;1500;C-;> 1 day;Very Common;Range;% Attack Speed;% Critical Chance;% Status Chance
+riven_1432082;Kronen;Croni-loctitis;1500;D;> 1 day;Very Common;% Attack Speed;% Critical Damage;Range;
+riven_1432638;Kronen;Crita-cronidex;1500;C+;new;Very Common;% Status Chance;% Critical Chance;% Attack Speed;% Melee Combo Efficiency
+riven_1424160;Kronen;Critatis;1600;C;> 1 day;Very Common;% Critical Damage;% Critical Chance;;
+riven_1428102;Kronen;Cronitis;1600;C;> 1 day;Very Common;% Critical Damage;% Attack Speed;;% Melee Combo Efficiency
+riven_1432655;Kronen;Croni-ignicron;1600;C+;new;Very Common;% Critical Chance;% Attack Speed;% Heat;% Critical Chance for Slide Attack
+riven_1428531;Kronen;Acritor;1700;B;> 1 day;Very Common;% Critical Damage;Range;;% Finisher Damage
+riven_1429856;Kronen;Loctiata;1800;D;> 1 day;Very Common;Range;% Damage;;% Critical Chance for Slide Attack
+riven_1431407;Kronen;Acri-locticron;1900;B-;> 1 day;Very Common;Range;% Critical Chance;% Critical Damage;Combo Duration
+riven_1425123;Kronen;Cronitis;1999;B-;> 1 day;Very Common;% Critical Damage;% Attack Speed;;% Finisher Damage
+riven_1430804;Kronen;Crita-loctiata;1999;C-;> 1 day;Very Common;% Damage;% Critical Chance;Range;% Status Duration
+riven_1423783;Kronen;Acridra;2000;B-;> 1 day;Very Common;% Attack Speed;% Critical Damage;;% Critical Chance for Slide Attack
+riven_1424374;Kronen;Visi-locticron;2000;D;> 1 day;Very Common;% Damage;Range;% Critical Chance;% Slash
+riven_1427431;Kronen;Acri-cronitor;2000;D;> 1 day;Very Common;% Critical Damage;Range;% Attack Speed;
+riven_1431364;Kronen;Crita-geliata;2000;C;> 1 day;Very Common;% Critical Chance;% Cold;% Damage;% Finisher Damage
+riven_1431381;Kronen;Locti-hexadra;2000;C-;> 1 day;Very Common;% Attack Speed;% Status Chance;Range;% Damage to Infested
+riven_1428376;Kronen;Crita-cronitor;2199;B+;> 1 day;Very Common;% Critical Chance;% Attack Speed;Range;% Finisher Damage
+riven_1430540;Kronen;Croni-loctitis;2200;C-;> 1 day;Very Common;% Attack Speed;% Critical Damage;Range;Combo Duration
+riven_1424590;Kronen;Igni-cronitis;2500;C;> 1 day;Very Common;% Attack Speed;% Critical Damage;% Heat;% Finisher Damage
+riven_1432821;Kronen;Acri-gelicron;2500;B;new;Very Common;% Cold;% Critical Damage;% Critical Chance;% Damage to Corpus
+riven_1432146;Kronen;Croni-acritox;2650;D;new;Very Common;% Attack Speed;% Critical Damage;Toxin;
+riven_1427804;Kronen;Geli-acridra;2700;C-;> 1 day;Very Common;% Cold;% Critical Damage;% Attack Speed;% Damage to Corpus
+riven_1433043;Kronen;Croni-gelitis;2900;D;new;Very Common;% Critical Damage;% Cold;% Attack Speed;
+riven_1424298;Kronen;Acri-cronicron;3000;B-;> 1 day;Very Common;% Critical Chance;% Attack Speed;% Critical Damage;% Damage to Grineer
+riven_1426026;Kronen;Crita-vexitis;3000;B;> 1 day;Very Common;% Electricity;% Critical Damage;% Critical Chance;% Critical Chance for Slide Attack
+riven_1428619;Kronen;Locti-gelidra;3000;D;> 1 day;Very Common;% Attack Speed;% Cold;Range;% Status Duration
+riven_1431357;Kronen;Acri-gelidex;3000;C-;> 1 day;Very Common;% Critical Damage;% Status Chance;% Cold;% Damage to Corpus
+riven_1432309;Kronen;Acricron;3000;A+;new;Very Common;% Critical Chance;% Critical Damage;;% Critical Chance for Slide Attack
+riven_1428220;Kronen;Critatis;3200;A-;> 1 day;Very Common;% Critical Damage;% Critical Chance;;% Melee Combo Efficiency
+riven_1426839;Kronen;Toxi-cronitis;3650;C+;> 1 day;Very Common;Toxin;% Attack Speed;% Critical Damage;% Damage to Infested
+riven_1429932;Kronen;Acri-cronitox;3888;C;> 1 day;Very Common;% Attack Speed;% Critical Damage;Toxin;% Critical Chance for Slide Attack
+riven_1425441;Kronen;Visi-cronitis;4000;C-;> 1 day;Very Common;% Attack Speed;% Damage;% Critical Damage;% Damage to Infested
+riven_1428827;Kronen;Acri-visitor;4000;D;> 1 day;Very Common;% Damage;Range;% Critical Damage;% Melee Combo Efficiency
+riven_1431330;Kronen;Acri-critadra;4000;B;> 1 day;Very Common;% Critical Chance;% Critical Damage;% Attack Speed;% Melee Combo Efficiency
+riven_1431605;Kronen;Acri-critaata;4000;B+;> 1 day;Very Common;% Damage;% Critical Chance;% Critical Damage;% Finisher Damage
+riven_1425537;Kronen;Acri-critator;4300;B;> 1 day;Very Common;Range;% Critical Chance;% Critical Damage;% Melee Combo Efficiency
+riven_1424909;Kronen;Visi-acricron;4495;Buff Popularity;> 1 day;Very Common;% Damage;% Critical Damage;% Critical Chance;% Melee Combo Efficiency
+riven_1425155;Kronen;Visitis;5000;C-;> 1 day;Very Common;% Damage;% Critical Damage;;% Finisher Damage
+riven_1426794;Kronen;Crita-acritor;5000;C-;> 1 day;Very Common;% Critical Damage;Range;% Critical Chance;
+riven_1426359;Kronen;Acri-loctidra;5800;B-;> 1 day;Very Common;% Attack Speed;% Critical Damage;Range;% Critical Chance for Slide Attack
+riven_1428870;Kronen;Acri-hexadra;5999;C+;> 1 day;Very Common;% Attack Speed;% Status Chance;% Critical Damage;% Finisher Damage
+riven_1431363;Kronen;Acri-cronidex;6000;C+;> 1 day;Very Common;% Attack Speed;% Critical Damage;% Status Chance;% Critical Chance for Slide Attack
+riven_1431879;Kronen;Croni-acriata;6500;C-;> 1 day;Very Common;% Damage;% Critical Damage;% Attack Speed;% Critical Chance for Slide Attack
+riven_1431880;Kronen;Acri-loctiata;9000;C-;> 1 day;Very Common;% Damage;% Critical Damage;Range;% Critical Chance for Slide Attack
 

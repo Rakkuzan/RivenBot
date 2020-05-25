@@ -1,26 +1,56 @@
 id;weapon;name;price;rating;age;sales;Buff1;Buff2;Buff3;Debuff
-riven_1427577;Brakk;Scitis;80;D;> 1 day;Uncommon;% Slash;% Critical Damage;;
-riven_1431440;Brakk;Gelisus;110;F;> 1 day;Uncommon;% Cold;% Slash;;
-riven_1429939;Brakk;Hexatak;130;F;> 1 day;Uncommon;% Status Chance;% Reload Speed;;% Ammo Maximum
-riven_1432386;Brakk;Acri-hexatron;130;D;new;Uncommon;% Critical Damage;% Status Chance;% Damage to Corpus;
-riven_1430209;Brakk;Visi-cronitin;150;C-;> 1 day;Uncommon;% Fire Rate;% Magazine Capacity;% Damage;% Zoom
-riven_1431766;Brakk;Argiada;150;F;> 1 day;Uncommon;% Damage to Grineer;% Damage to Infested;;% Slash
-riven_1432480;Brakk;Feva-critabin;150;D;new;Uncommon;% Ammo Maximum;% Critical Chance;% Reload Speed;% Fire Rate
-riven_1433059;Brakk;Vexi-cronido;180;F;new;Uncommon;% Electricity;% Cold;% Fire Rate;
-riven_1424743;Brakk;Hexa-critaata;200;B;> 1 day;Uncommon;% Status Chance;% Damage;% Critical Chance;
-riven_1429871;Brakk;Fevaata;200;C+;> 1 day;Uncommon;% Damage;% Reload Speed;;% Impact
-riven_1431156;Brakk;Croni-satibin;250;D;> 1 day;Uncommon;% Fire Rate;% Ammo Maximum;% Multishot;
-riven_1429576;Brakk;Feva-critacan;275;C;> 1 day;Uncommon;% Critical Chance;% Multishot;% Reload Speed;
-riven_1427937;Brakk;Hexa-critatio;350;D;> 1 day;Uncommon;% Status Chance;% Critical Chance;% Electricity;% Fire Rate
-riven_1427108;Brakk;Toxi-acritio;450;D;> 1 day;Uncommon;Toxin;% Critical Damage;% Electricity;% Damage to Corpus
-riven_1431213;Brakk;Sciata;500;B-;> 1 day;Uncommon;% Slash;% Damage;;% Zoom
-riven_1432469;Brakk;Visitis;500;B;new;Uncommon;% Damage;% Critical Damage;;% Ammo Maximum
-riven_1425868;Brakk;Geli-visicron;600;C+;> 1 day;Uncommon;% Cold;% Damage;% Critical Chance;% Status Duration
-riven_1431214;Brakk;Crita-visisus;750;B+;> 1 day;Uncommon;% Slash;% Critical Chance;% Damage;% Damage to Infested
-riven_1431480;Brakk;Visi-vexitox;1000;C-;> 1 day;Uncommon;% Electricity;Toxin;% Damage;% Status Duration
-riven_1432200;Brakk;Satiata;1600;A+;new;Uncommon;% Damage;% Multishot;;% Zoom
-riven_1429183;Brakk;Visican;1999;A-;> 1 day;Uncommon;% Damage;% Multishot;;% Magazine Capacity
-riven_1429392;Brakk;Sati-lexicron;2800;B-;> 1 day;Uncommon;% Multishot;Punch Through;% Critical Chance;% Impact
-riven_1430084;Brakk;Acri-satitox;3000;B-;> 1 day;Uncommon;% Critical Damage;% Multishot;Toxin;% Impact
-riven_1425019;Brakk;Sati-critatis;5000;A;> 1 day;Uncommon;% Critical Chance;% Critical Damage;% Multishot;% Weapon Recoil
+riven_1427977;Catchmoon;Vexitis;50;D;> 1 day;Common;% Critical Damage;% Electricity;;% Multishot
+riven_1428267;Catchmoon;Igni-acrido;50;D;> 1 day;Common;% Heat;% Cold;% Critical Damage;
+riven_1430569;Catchmoon;Critanok;50;D;> 1 day;Common;Punch Through;% Critical Chance;;% Critical Damage
+riven_1431554;Catchmoon;Zetibin;50;F;> 1 day;Common;% Ammo Maximum;% Weapon Recoil;;
+riven_1427973;Catchmoon;Toxido;55;F;> 1 day;Common;Toxin;% Cold;;
+riven_1432120;Catchmoon;Argipha;60;F;> 1 day;Common;% Damage to Grineer;% Heat;;
+riven_1432169;Catchmoon;Hera-ampitio;60;F;new;Common;% Electricity;% Zoom;% Ammo Maximum;
+riven_1432484;Catchmoon;Vexi-armaata;60;C-;new;Common;% Damage;% Electricity;% Magazine Capacity;% Status Duration
+riven_1432809;Catchmoon;Zetican;60;D;new;Common;% Multishot;% Weapon Recoil;;
+riven_1428213;Catchmoon;Hexa-scicon;65;F;> 1 day;Common;% Status Chance;% Slash;% Damage to Grineer;% Critical Chance
+riven_1425216;Catchmoon;Crita-visibin;70;B;> 1 day;Common;% Damage;% Critical Chance;% Ammo Maximum;
+riven_1430962;Catchmoon;Gelicron;75;C;> 1 day;Common;% Critical Chance;% Cold;;
+riven_1430963;Catchmoon;Gelicron;75;C;> 1 day;Common;% Critical Chance;% Cold;;
+riven_1431052;Catchmoon;Sati-ampicron;79;B-;> 1 day;Common;% Critical Chance;% Multishot;% Ammo Maximum;
+riven_1430301;Catchmoon;Visi-conciton;90;C;> 1 day;Common;% Projectile Speed;% Impact;% Damage;% Zoom
+riven_1432519;Catchmoon;Scican;95;C-;new;Common;% Slash;% Multishot;;% Puncture
+riven_1432534;Catchmoon;Acri-concitox;99;D;new;Common;% Critical Damage;Toxin;% Projectile Speed;% Puncture
+riven_1432537;Catchmoon;Lexi-saticon;99;D;new;Common;% Multishot;% Damage to Grineer;Punch Through;% Zoom
+riven_1425639;Catchmoon;Puramag;100;F;> 1 day;Common;% Damage to Infested;% Weapon Recoil;;% Reload Speed
+riven_1430333;Catchmoon;Mantiata;100;C;> 1 day;Common;% Damage;% Damage to Corpus;;% Ammo Maximum
+riven_1423997;Catchmoon;Satiata;120;B+;> 1 day;Common;% Multishot;% Damage;;
+riven_1425571;Catchmoon;Visidex;120;C;> 1 day;Common;% Damage;% Status Chance;;% Projectile Speed
+riven_1429626;Catchmoon;Acripha;120;D;> 1 day;Common;% Heat;% Critical Damage;;% Status Chance
+riven_1432941;Catchmoon;Insi-ignidra;120;F;new;Common;% Fire Rate;% Heat;% Puncture;
+riven_1424981;Catchmoon;Acri-visitox;150;B-;> 1 day;Common;Toxin;% Damage;% Critical Damage;
+riven_1425226;Catchmoon;Croni-vexidex;150;D;> 1 day;Common;% Status Chance;% Electricity;% Fire Rate;
+riven_1426395;Catchmoon;Toxi-acridex;150;D;> 1 day;Common;Toxin;% Status Chance;% Critical Damage;
+riven_1429365;Catchmoon;Fevado;150;F;> 1 day;Common;% Reload Speed;% Cold;;% Damage to Infested
+riven_1426928;Catchmoon;Cronican;199;C-;> 1 day;Common;% Fire Rate;% Multishot;;% Status Duration
+riven_1425359;Catchmoon;Hexa-acricron;200;B-;> 1 day;Common;% Critical Chance;% Status Chance;% Critical Damage;
+riven_1426426;Catchmoon;Hexa-fevacak;200;F;> 1 day;Common;% Status Chance;% Puncture;% Reload Speed;% Ammo Maximum
+riven_1432536;Catchmoon;Zeti-critacon;200;D;new;Common;% Weapon Recoil;% Critical Chance;% Damage to Grineer;% Fire Rate
+riven_1432573;Catchmoon;Hexa-critanak;200;C-;new;Common;% Projectile Speed;% Critical Chance;% Status Chance;
+riven_1428911;Catchmoon;Visican;250;B+;> 1 day;Common;% Damage;% Multishot;;
+riven_1429636;Catchmoon;Acri-zetican;250;C;> 1 day;Common;% Critical Damage;% Weapon Recoil;% Multishot;
+riven_1429639;Catchmoon;Sci-satitis;250;C;> 1 day;Common;% Slash;% Critical Damage;% Multishot;
+riven_1429641;Catchmoon;Acri-ampican;250;C;> 1 day;Common;% Ammo Maximum;% Critical Damage;% Multishot;
+riven_1431451;Catchmoon;Crita-acrides;260;C+;> 1 day;Common;% Critical Chance;% Critical Damage;% Status Duration;
+riven_1430044;Catchmoon;Crita-satisus;280;B-;> 1 day;Common;% Multishot;% Slash;% Critical Chance;
+riven_1427317;Catchmoon;Crita-argiata;300;B;> 1 day;Common;% Damage to Grineer;% Critical Chance;% Damage;
+riven_1428843;Catchmoon;Vexinak;300;F;> 1 day;Common;% Electricity;% Projectile Speed;;% Ammo Maximum
+riven_1430806;Catchmoon;Acriata;300;B+;> 1 day;Common;% Critical Damage;% Damage;;
+riven_1427021;Catchmoon;Critadra;350;C;> 1 day;Common;% Fire Rate;% Critical Chance;;% Damage to Grineer
+riven_1427965;Catchmoon;Visi-satinak;350;D;> 1 day;Common;% Projectile Speed;% Damage;% Multishot;% Critical Damage
+riven_1424206;Catchmoon;Arma-acrican;400;C+;> 1 day;Common;% Multishot;% Critical Damage;% Magazine Capacity;% Zoom
+riven_1424849;Catchmoon;Geliata;400;C+;> 1 day;Common;% Cold;% Damage;;% Puncture
+riven_1432596;Catchmoon;Vexi-visido;400;C;new;Common;% Electricity;% Damage;% Cold;% Impact
+riven_1427551;Catchmoon;Acri-manticron;449;C+;> 1 day;Common;% Critical Chance;% Damage to Corpus;% Critical Damage;
+riven_1424845;Catchmoon;Geliata;600;C+;> 1 day;Common;% Cold;% Damage;;% Puncture
+riven_1424798;Catchmoon;Igni-acriata;2499;B-;> 1 day;Common;% Damage;% Heat;% Critical Damage;
+riven_1424833;Catchmoon;Geliata;2500;C+;> 1 day;Common;% Cold;% Damage;;% Puncture
+riven_1429590;Catchmoon;Visi-critatis;3000;A+;> 1 day;Common;% Damage;% Critical Chance;% Critical Damage;% Damage to Infested
+riven_1433121;Catchmoon;Acri-critacan;4000;A;new;Common;% Critical Damage;% Multishot;% Critical Chance;% Zoom
+riven_1425498;Catchmoon;Sati-acrilis;10000;C-;> 1 day;Common;% Multishot;% Critical Damage;% Zoom;% Slash
 

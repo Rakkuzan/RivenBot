@@ -1,26 +1,80 @@
 id;weapon;name;price;rating;age;sales;Buff1;Buff2;Buff3;Debuff
-riven_1427577;Brakk;Scitis;80;D;> 1 day;Uncommon;% Slash;% Critical Damage;;
-riven_1431440;Brakk;Gelisus;110;F;> 1 day;Uncommon;% Cold;% Slash;;
-riven_1429939;Brakk;Hexatak;130;F;> 1 day;Uncommon;% Status Chance;% Reload Speed;;% Ammo Maximum
-riven_1432386;Brakk;Acri-hexatron;130;D;new;Uncommon;% Critical Damage;% Status Chance;% Damage to Corpus;
-riven_1430209;Brakk;Visi-cronitin;150;C-;> 1 day;Uncommon;% Fire Rate;% Magazine Capacity;% Damage;% Zoom
-riven_1431766;Brakk;Argiada;150;F;> 1 day;Uncommon;% Damage to Grineer;% Damage to Infested;;% Slash
-riven_1432480;Brakk;Feva-critabin;150;D;new;Uncommon;% Ammo Maximum;% Critical Chance;% Reload Speed;% Fire Rate
-riven_1433059;Brakk;Vexi-cronido;180;F;new;Uncommon;% Electricity;% Cold;% Fire Rate;
-riven_1424743;Brakk;Hexa-critaata;200;B;> 1 day;Uncommon;% Status Chance;% Damage;% Critical Chance;
-riven_1429871;Brakk;Fevaata;200;C+;> 1 day;Uncommon;% Damage;% Reload Speed;;% Impact
-riven_1431156;Brakk;Croni-satibin;250;D;> 1 day;Uncommon;% Fire Rate;% Ammo Maximum;% Multishot;
-riven_1429576;Brakk;Feva-critacan;275;C;> 1 day;Uncommon;% Critical Chance;% Multishot;% Reload Speed;
-riven_1427937;Brakk;Hexa-critatio;350;D;> 1 day;Uncommon;% Status Chance;% Critical Chance;% Electricity;% Fire Rate
-riven_1427108;Brakk;Toxi-acritio;450;D;> 1 day;Uncommon;Toxin;% Critical Damage;% Electricity;% Damage to Corpus
-riven_1431213;Brakk;Sciata;500;B-;> 1 day;Uncommon;% Slash;% Damage;;% Zoom
-riven_1432469;Brakk;Visitis;500;B;new;Uncommon;% Damage;% Critical Damage;;% Ammo Maximum
-riven_1425868;Brakk;Geli-visicron;600;C+;> 1 day;Uncommon;% Cold;% Damage;% Critical Chance;% Status Duration
-riven_1431214;Brakk;Crita-visisus;750;B+;> 1 day;Uncommon;% Slash;% Critical Chance;% Damage;% Damage to Infested
-riven_1431480;Brakk;Visi-vexitox;1000;C-;> 1 day;Uncommon;% Electricity;Toxin;% Damage;% Status Duration
-riven_1432200;Brakk;Satiata;1600;A+;new;Uncommon;% Damage;% Multishot;;% Zoom
-riven_1429183;Brakk;Visican;1999;A-;> 1 day;Uncommon;% Damage;% Multishot;;% Magazine Capacity
-riven_1429392;Brakk;Sati-lexicron;2800;B-;> 1 day;Uncommon;% Multishot;Punch Through;% Critical Chance;% Impact
-riven_1430084;Brakk;Acri-satitox;3000;B-;> 1 day;Uncommon;% Critical Damage;% Multishot;Toxin;% Impact
-riven_1425019;Brakk;Sati-critatis;5000;A;> 1 day;Uncommon;% Critical Chance;% Critical Damage;% Multishot;% Weapon Recoil
+riven_1425180;Nukor;Acri-zeticron;300;C-;> 1 day;Common;% Critical Chance;% Critical Damage;% Weapon Recoil;% Status Duration
+riven_1430512;Nukor;Hexa-satiada;320;D;> 1 day;Common;% Status Chance;% Multishot;% Damage to Infested;
+riven_1430857;Nukor;Ampiata;325;C-;> 1 day;Common;% Damage;% Ammo Maximum;;
+riven_1429334;Nukor;Sati-ignides;335;D;> 1 day;Common;% Status Duration;% Heat;% Multishot;
+riven_1426786;Nukor;Visi-fevacron;350;C-;> 1 day;Common;% Damage;% Critical Chance;% Reload Speed;% Status Chance
+riven_1430739;Nukor;Visitron;350;C+;> 1 day;Common;% Damage;% Damage to Corpus;;% Weapon Recoil
+riven_1432260;Nukor;Hexa-mantiata;350;C-;new;Common;% Status Chance;% Damage to Corpus;% Damage;
+riven_1432790;Nukor;Visibin;350;C-;new;Common;% Ammo Maximum;% Damage;;% Status Duration
+riven_1432978;Nukor;Ignimag;350;F;new;Common;% Heat;% Weapon Recoil;;
+riven_1433079;Nukor;Argi-hexapha;350;F;new;Common;% Status Chance;% Damage to Grineer;% Heat;
+riven_1433271;Nukor;Cronido;350;F;new;Common;% Fire Rate;% Cold;;% Damage to Corpus
+riven_1424481;Nukor;Armalis;400;F;> 1 day;Common;% Zoom;% Magazine Capacity;;
+riven_1426336;Nukor;Vexi-lexiata;400;D;> 1 day;Common;% Damage;Punch Through;% Electricity;
+riven_1431163;Nukor;Vexican;425;D;> 1 day;Common;% Multishot;% Electricity;;% Damage to Grineer
+riven_1430672;Nukor;Hexa-argiata;450;C+;> 1 day;Common;% Damage to Grineer;% Damage;% Status Chance;% Damage to Infested
+riven_1430831;Nukor;Visi-mantitin;450;D;> 1 day;Common;% Magazine Capacity;% Damage;% Damage to Corpus;% Multishot
+riven_1431231;Nukor;Deci-toxican;450;D;> 1 day;Common;% Multishot;Toxin;% Status Duration;
+riven_1432608;Nukor;Visido;450;B-;new;Common;% Damage;% Cold;;% Damage to Infested
+riven_1431819;Nukor;Crita-visipha;460;B-;> 1 day;Common;% Damage;% Critical Chance;% Heat;% Damage to Corpus
+riven_1428807;Nukor;Saticron;477;B+;> 1 day;Common;% Critical Chance;% Multishot;;% Weapon Recoil
+riven_1431525;Nukor;Satipha;480;D;> 1 day;Common;% Multishot;% Heat;;
+riven_1424142;Nukor;Hexa-gelipha;500;F;> 1 day;Common;% Heat;% Status Chance;% Cold;
+riven_1425775;Nukor;Visi-critado;500;C+;> 1 day;Common;% Critical Chance;% Damage;% Cold;
+riven_1425891;Nukor;Igni-fevacan;500;D;> 1 day;Common;% Multishot;% Heat;% Reload Speed;% Damage to Corpus
+riven_1429589;Nukor;Manti-acricron;500;C;> 1 day;Common;% Critical Damage;% Critical Chance;% Damage to Corpus;% Reload Speed
+riven_1430173;Nukor;Visi-lexitis;500;C;> 1 day;Common;% Damage;Punch Through;% Critical Damage;
+riven_1432774;Nukor;Visi-toxicon;500;C-;new;Common;% Damage;% Damage to Grineer;Toxin;% Damage to Corpus
+riven_1432824;Nukor;Vexi-critades;500;D;new;Common;% Critical Chance;% Electricity;% Status Duration;% Weapon Recoil
+riven_1427785;Nukor;Arma-visican;550;B+;> 1 day;Common;% Magazine Capacity;% Multishot;% Damage;% Damage to Infested
+riven_1429089;Nukor;Acri-armacron;550;C+;> 1 day;Common;% Magazine Capacity;% Critical Chance;% Critical Damage;% Weapon Recoil
+riven_1430420;Nukor;Vexi-satidex;600;D;> 1 day;Common;% Status Chance;% Electricity;% Multishot;% Damage to Grineer
+riven_1430424;Nukor;Igni-hexanok;600;F;> 1 day;Common;% Status Chance;Punch Through;% Heat;
+riven_1431416;Nukor;Satitis;600;C+;> 1 day;Common;% Critical Damage;% Multishot;;
+riven_1431864;Nukor;Satidex;600;C-;> 1 day;Common;% Multishot;% Status Chance;;% Reload Speed
+riven_1432482;Nukor;Toxi-hexacron;600;C+;new;Common;% Critical Chance;Toxin;% Status Chance;% Damage to Infested
+riven_1433268;Nukor;Critacan;600;C+;new;Common;% Multishot;% Critical Chance;;
+riven_1433497;Nukor;Visi-critado;600;B;new;Common;% Cold;% Critical Chance;% Damage;% Weapon Recoil
+riven_1427524;Nukor;Acri-hexades;650;D;> 1 day;Common;% Status Chance;% Critical Damage;% Status Duration;
+riven_1430752;Nukor;Crita-visidex;650;B-;> 1 day;Common;% Critical Chance;% Status Chance;% Damage;
+riven_1433224;Nukor;Visitis;650;B;new;Common;% Critical Damage;% Damage;;
+riven_1433227;Nukor;Acritio;650;C;new;Common;% Critical Damage;% Electricity;;% Damage to Infested
+riven_1431304;Nukor;Toxican;666;C-;> 1 day;Common;Toxin;% Multishot;;% Ammo Maximum
+riven_1432589;Nukor;Croni-acriata;675;C+;new;Common;% Critical Damage;% Damage;% Fire Rate;
+riven_1428529;Nukor;Vexi-fevacan;700;D;> 1 day;Common;% Electricity;% Reload Speed;% Multishot;
+riven_1431701;Nukor;Deci-satidra;700;C-;> 1 day;Common;% Multishot;% Status Duration;% Fire Rate;% Zoom
+riven_1433008;Nukor;Critaata;700;B;new;Common;% Damage;% Critical Chance;;
+riven_1431455;Nukor;Critaata;745;B;> 1 day;Common;% Damage;% Critical Chance;;
+riven_1433398;Nukor;Acrican;750;B+;new;Common;% Critical Damage;% Multishot;;% Damage to Infested
+riven_1431437;Nukor;Acricron;900;C+;> 1 day;Common;% Critical Chance;% Critical Damage;;% Status Duration
+riven_1430667;Nukor;Crita-croniata;920;C+;> 1 day;Common;% Fire Rate;% Damage;% Critical Chance;% Status Duration
+riven_1431529;Nukor;Acriata;950;A+;> 1 day;Common;% Critical Damage;% Damage;;% Damage to Infested
+riven_1424725;Nukor;Acriata;1000;C+;> 1 day;Common;% Critical Damage;% Damage;;% Status Chance
+riven_1430933;Nukor;Visitox;1000;C+;> 1 day;Common;Toxin;% Damage;;% Fire Rate
+riven_1430497;Nukor;Crita-vexidra;1050;C;> 1 day;Common;% Critical Chance;% Fire Rate;% Electricity;% Damage to Infested
+riven_1431802;Nukor;Crita-hexapha;1050;D;> 1 day;Common;% Critical Chance;% Status Chance;% Heat;% Ammo Maximum
+riven_1426930;Nukor;Sati-critatio;1090;C;> 1 day;Common;% Critical Chance;% Multishot;% Electricity;% Ammo Maximum
+riven_1427936;Nukor;Crita-satitio;1100;B;> 1 day;Common;% Electricity;% Multishot;% Critical Chance;% Damage to Infested
+riven_1429930;Nukor;Acri-critadex;1100;C;> 1 day;Common;% Status Chance;% Critical Chance;% Critical Damage;
+riven_1427531;Nukor;Hexa-satitis;1200;C;> 1 day;Common;% Multishot;% Status Chance;% Critical Damage;% Ammo Maximum
+riven_1430020;Nukor;Acri-hexacron;1200;C+;> 1 day;Common;% Critical Damage;% Status Chance;% Critical Chance;% Damage to Corpus
+riven_1424198;Nukor;Sati-acridex;1250;C;> 1 day;Common;% Status Chance;% Critical Damage;% Multishot;
+riven_1428868;Nukor;Visican;1400;B;> 1 day;Common;% Damage;% Multishot;;
+riven_1431486;Nukor;Igni-acricron;1450;C;> 1 day;Common;% Critical Damage;% Critical Chance;% Heat;% Reload Speed
+riven_1432349;Nukor;Vexi-visican;1500;A-;new;Common;% Damage;% Multishot;% Electricity;% Damage to Infested
+riven_1430636;Nukor;Satiata;1590;B;> 1 day;Common;% Damage;% Multishot;;% Ammo Maximum
+riven_1424179;Nukor;Visi-lexicron;1800;C+;> 1 day;Common;% Critical Chance;Punch Through;% Damage;
+riven_1428464;Nukor;Critacan;2000;C+;> 1 day;Common;% Multishot;% Critical Chance;;% Fire Rate
+riven_1431220;Nukor;Critacan;2000;A-;> 1 day;Common;% Multishot;% Critical Chance;;% Damage to Infested
+riven_1431225;Nukor;Visidex;2000;B+;> 1 day;Common;% Status Chance;% Damage;;% Damage to Infested
+riven_1424475;Nukor;Acri-satiata;2500;B;> 1 day;Common;% Multishot;% Damage;% Critical Damage;
+riven_1430488;Nukor;Crita-satitis;2500;C;> 1 day;Common;% Critical Damage;% Critical Chance;% Multishot;% Status Chance
+riven_1429356;Nukor;Visitio;2999;B-;> 1 day;Common;% Electricity;% Damage;;% Weapon Recoil
+riven_1429091;Nukor;Hexa-visipha;3000;B-;> 1 day;Common;% Damage;% Status Chance;% Heat;% Zoom
+riven_1431690;Nukor;Acri-critacan;3500;A;> 1 day;Common;% Multishot;% Critical Damage;% Critical Chance;% Damage to Infested
+riven_1429747;Nukor;Acri-critaata;4000;A;> 1 day;Common;% Damage;% Critical Damage;% Critical Chance;% Weapon Recoil
+riven_1432844;Nukor;Toxi-visican;4500;B+;new;Common;Toxin;% Multishot;% Damage;% Weapon Recoil
+riven_1433428;Nukor;Sati-acriata;4500;A+;new;Common;% Multishot;% Damage;% Critical Damage;% Zoom
+riven_1430736;Nukor;Croni-visican;9999;B;> 1 day;Common;% Fire Rate;% Multishot;% Damage;% Weapon Recoil
 

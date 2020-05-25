@@ -1,26 +1,63 @@
 id;weapon;name;price;rating;age;sales;Buff1;Buff2;Buff3;Debuff
-riven_1427577;Brakk;Scitis;80;D;> 1 day;Uncommon;% Slash;% Critical Damage;;
-riven_1431440;Brakk;Gelisus;110;F;> 1 day;Uncommon;% Cold;% Slash;;
-riven_1429939;Brakk;Hexatak;130;F;> 1 day;Uncommon;% Status Chance;% Reload Speed;;% Ammo Maximum
-riven_1432386;Brakk;Acri-hexatron;130;D;new;Uncommon;% Critical Damage;% Status Chance;% Damage to Corpus;
-riven_1430209;Brakk;Visi-cronitin;150;C-;> 1 day;Uncommon;% Fire Rate;% Magazine Capacity;% Damage;% Zoom
-riven_1431766;Brakk;Argiada;150;F;> 1 day;Uncommon;% Damage to Grineer;% Damage to Infested;;% Slash
-riven_1432480;Brakk;Feva-critabin;150;D;new;Uncommon;% Ammo Maximum;% Critical Chance;% Reload Speed;% Fire Rate
-riven_1433059;Brakk;Vexi-cronido;180;F;new;Uncommon;% Electricity;% Cold;% Fire Rate;
-riven_1424743;Brakk;Hexa-critaata;200;B;> 1 day;Uncommon;% Status Chance;% Damage;% Critical Chance;
-riven_1429871;Brakk;Fevaata;200;C+;> 1 day;Uncommon;% Damage;% Reload Speed;;% Impact
-riven_1431156;Brakk;Croni-satibin;250;D;> 1 day;Uncommon;% Fire Rate;% Ammo Maximum;% Multishot;
-riven_1429576;Brakk;Feva-critacan;275;C;> 1 day;Uncommon;% Critical Chance;% Multishot;% Reload Speed;
-riven_1427937;Brakk;Hexa-critatio;350;D;> 1 day;Uncommon;% Status Chance;% Critical Chance;% Electricity;% Fire Rate
-riven_1427108;Brakk;Toxi-acritio;450;D;> 1 day;Uncommon;Toxin;% Critical Damage;% Electricity;% Damage to Corpus
-riven_1431213;Brakk;Sciata;500;B-;> 1 day;Uncommon;% Slash;% Damage;;% Zoom
-riven_1432469;Brakk;Visitis;500;B;new;Uncommon;% Damage;% Critical Damage;;% Ammo Maximum
-riven_1425868;Brakk;Geli-visicron;600;C+;> 1 day;Uncommon;% Cold;% Damage;% Critical Chance;% Status Duration
-riven_1431214;Brakk;Crita-visisus;750;B+;> 1 day;Uncommon;% Slash;% Critical Chance;% Damage;% Damage to Infested
-riven_1431480;Brakk;Visi-vexitox;1000;C-;> 1 day;Uncommon;% Electricity;Toxin;% Damage;% Status Duration
-riven_1432200;Brakk;Satiata;1600;A+;new;Uncommon;% Damage;% Multishot;;% Zoom
-riven_1429183;Brakk;Visican;1999;A-;> 1 day;Uncommon;% Damage;% Multishot;;% Magazine Capacity
-riven_1429392;Brakk;Sati-lexicron;2800;B-;> 1 day;Uncommon;% Multishot;Punch Through;% Critical Chance;% Impact
-riven_1430084;Brakk;Acri-satitox;3000;B-;> 1 day;Uncommon;% Critical Damage;% Multishot;Toxin;% Impact
-riven_1425019;Brakk;Sati-critatis;5000;A;> 1 day;Uncommon;% Critical Chance;% Critical Damage;% Multishot;% Weapon Recoil
+riven_1432812;Acceltra;Argi-acricron;200;B-;new;Common;% Damage to Grineer;% Critical Chance;% Critical Damage;% Reload Speed
+riven_1424598;Acceltra;Vexi-cronides;250;F;> 1 day;Common;% Electricity;% Fire Rate;% Status Duration;% Magazine Capacity
+riven_1426236;Acceltra;Argitis;250;C-;> 1 day;Common;% Damage to Grineer;% Critical Damage;;
+riven_1433410;Acceltra;Argi-vexido;250;F;new;Common;% Cold;% Damage to Grineer;% Electricity;
+riven_1433424;Acceltra;Feva-vexitis;250;D;new;Common;% Reload Speed;% Electricity;% Critical Damage;% Ammo Maximum
+riven_1431676;Acceltra;Sati-cronicron;275;C;> 1 day;Common;% Critical Chance;% Multishot;% Fire Rate;% Magazine Capacity
+riven_1432900;Acceltra;Conci-ignilis;299;F;new;Common;% Projectile Speed;% Zoom;% Heat;% Status Duration
+riven_1427480;Acceltra;Crita-zetican;300;B-;> 1 day;Common;% Critical Chance;% Multishot;% Weapon Recoil;
+riven_1430685;Acceltra;Decinak;350;F;> 1 day;Common;% Status Duration;% Projectile Speed;;% Status Chance
+riven_1432418;Acceltra;Geliata;350;C-;new;Common;% Damage;% Cold;;
+riven_1425197;Acceltra;Sati-decitis;400;C;> 1 day;Common;% Multishot;% Critical Damage;% Status Duration;% Ammo Maximum
+riven_1425234;Acceltra;Sati-acribin;400;C-;> 1 day;Common;% Critical Damage;% Multishot;% Ammo Maximum;% Damage to Grineer
+riven_1431603;Acceltra;Igniata;400;C-;> 1 day;Common;% Heat;% Damage;;
+riven_1432546;Acceltra;Pura-satidra;400;D;new;Common;% Fire Rate;% Multishot;% Damage to Infested;
+riven_1423731;Acceltra;Acri-ampicron;411;B;> 1 day;Common;% Ammo Maximum;% Critical Chance;% Critical Damage;
+riven_1428083;Acceltra;Crita-vexican;450;B;> 1 day;Common;% Multishot;% Electricity;% Critical Chance;
+riven_1432943;Acceltra;Critatis;450;A;new;Common;% Critical Chance;% Critical Damage;;
+riven_1425229;Acceltra;Acri-conciata;500;C;> 1 day;Common;% Critical Damage;% Damage;% Projectile Speed;% Status Duration
+riven_1426419;Acceltra;Toxi-armatis;500;D;> 1 day;Common;Toxin;% Magazine Capacity;% Critical Damage;% Ammo Maximum
+riven_1429850;Acceltra;Conci-satidex;500;F;> 1 day;Common;% Multishot;% Status Chance;% Projectile Speed;% Damage
+riven_1433511;Acceltra;Crita-toxican;500;B-;new;Common;% Critical Chance;Toxin;% Multishot;% Reload Speed
+riven_1425820;Acceltra;Crita-acribin;550;B;> 1 day;Common;% Critical Chance;% Critical Damage;% Ammo Maximum;
+riven_1427938;Acceltra;Saticron;550;A-;> 1 day;Common;% Critical Chance;% Multishot;;
+riven_1428470;Acceltra;Sati-cronitis;590;C+;> 1 day;Common;% Critical Damage;% Multishot;% Fire Rate;% Zoom
+riven_1424083;Acceltra;Acriata;600;A-;> 1 day;Common;% Damage;% Critical Damage;;% Impact
+riven_1428368;Acceltra;Crita-visidra;600;B+;> 1 day;Common;% Fire Rate;% Damage;% Critical Chance;% Damage to Infested
+riven_1433225;Acceltra;Crita-hexanak;649;C;new;Common;% Projectile Speed;% Critical Chance;% Status Chance;% Impact
+riven_1427219;Acceltra;Crita-satidra;700;C+;> 1 day;Common;% Fire Rate;% Multishot;% Critical Chance;% Status Chance
+riven_1428428;Acceltra;Ampi-visican;700;C-;> 1 day;Common;% Multishot;% Damage;% Ammo Maximum;% Status Duration
+riven_1430046;Acceltra;Crita-zetitis;700;A;> 1 day;Common;% Critical Chance;% Critical Damage;;% Weapon Recoil
+riven_1430482;Acceltra;Acrican;700;B+;> 1 day;Common;% Multishot;% Critical Damage;;% Damage to Infested
+riven_1424297;Acceltra;Deci-satiata;750;C+;> 1 day;Common;% Damage;% Multishot;% Status Duration;% Zoom
+riven_1426854;Acceltra;Critacan;750;B;> 1 day;Common;% Critical Chance;% Multishot;;% Status Chance
+riven_1426942;Acceltra;Acri-visican;750;B+;> 1 day;Common;% Multishot;% Critical Damage;% Damage;
+riven_1426943;Acceltra;Critacan;790;B+;> 1 day;Common;% Multishot;% Critical Chance;;% Reload Speed
+riven_1426853;Acceltra;Acrican;800;B;> 1 day;Common;% Multishot;% Critical Damage;;% Zoom
+riven_1428660;Acceltra;Visi-satitis;800;B;> 1 day;Common;% Multishot;% Damage;% Critical Damage;% Damage to Grineer
+riven_1429975;Acceltra;Conci-visican;800;C;> 1 day;Common;% Projectile Speed;% Damage;% Multishot;% Damage to Corpus
+riven_1431229;Acceltra;Satitis;800;B-;> 1 day;Common;% Multishot;% Critical Damage;;% Status Duration
+riven_1427835;Acceltra;Crita-hexaata;900;B+;> 1 day;Common;% Damage;% Critical Chance;% Status Chance;% Zoom
+riven_1430059;Acceltra;Satiata;900;B+;> 1 day;Common;% Damage;% Multishot;;% Impact
+riven_1433026;Acceltra;Satiata;900;B;new;Common;% Multishot;% Damage;;% Zoom
+riven_1432269;Acceltra;Toxi-ampitin;999;Buff Popularity;new;Common;% Ammo Maximum;% Magazine Capacity;Toxin;
+riven_1425236;Acceltra;Crita-visitak;1000;B;> 1 day;Common;% Reload Speed;% Critical Chance;% Damage;% Ammo Maximum
+riven_1426883;Acceltra;Acrican;1000;B-;> 1 day;Common;% Multishot;% Critical Damage;;% Damage to Grineer
+riven_1427137;Acceltra;Vexi-visicron;1000;B;> 1 day;Common;% Critical Chance;% Damage;% Electricity;
+riven_1430106;Acceltra;Critaata;1000;A+;> 1 day;Common;% Damage;% Critical Chance;;% Zoom
+riven_1431399;Acceltra;Crita-satitis;1000;A;> 1 day;Common;% Critical Chance;% Critical Damage;% Multishot;
+riven_1431489;Acceltra;Acriata;1000;B;> 1 day;Common;% Damage;% Critical Damage;;% Weapon Recoil
+riven_1431392;Acceltra;Toxi-cronican;1200;D;> 1 day;Common;% Multishot;Toxin;% Fire Rate;% Reload Speed
+riven_1431182;Acceltra;Critatis;1250;A;> 1 day;Common;% Critical Chance;% Critical Damage;;% Weapon Recoil
+riven_1429701;Acceltra;Sati-croniata;1500;C+;> 1 day;Common;% Damage;% Multishot;% Fire Rate;% Zoom
+riven_1431519;Acceltra;Acricron;1500;B;> 1 day;Common;% Critical Damage;% Critical Chance;;% Fire Rate
+riven_1425117;Acceltra;Vexi-acriata;2000;C+;> 1 day;Common;% Critical Damage;% Damage;% Electricity;% Weapon Recoil
+riven_1433237;Acceltra;Visi-ignicron;2000;B;new;Common;% Damage;% Critical Chance;% Heat;% Ammo Maximum
+riven_1427208;Acceltra;Acri-saticron;2300;A;> 1 day;Common;% Multishot;% Critical Chance;% Critical Damage;
+riven_1427203;Acceltra;Sati-critatis;2500;A;> 1 day;Common;% Critical Damage;% Critical Chance;% Multishot;
+riven_1429620;Acceltra;Vexi-satitis;2800;C;> 1 day;Common;% Multishot;% Electricity;% Critical Damage;% Damage to Corpus
+riven_1424977;Acceltra;Acri-critacan;3500;B+;> 1 day;Common;% Critical Chance;% Critical Damage;% Multishot;% Damage to Grineer
+riven_1425798;Acceltra;Acri-saticron;9999;A+;> 1 day;Common;% Critical Chance;% Multishot;% Critical Damage;% Impact
+riven_1424729;Acceltra;Sati-visicron;99995;A+;> 1 day;Common;% Multishot;% Damage;% Critical Chance;% Impact
 

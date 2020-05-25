@@ -2,7 +2,6 @@ id;weapon;name;price;rating;age;sales;Buff1;Buff2;Buff3;Debuff
 riven_1424565;Vectis;Insi-hexacron;150;C-;> 1 day;Common;% Critical Chance;% Puncture;% Status Chance;
 riven_1428334;Vectis;Vexipha;150;F;> 1 day;Common;% Electricity;% Heat;;
 riven_1429285;Vectis;Critado;150;C;> 1 day;Common;% Critical Chance;% Cold;;% Ammo Maximum
-riven_1430947;Vectis;Crita-satipha;199;B-;> 1 day;Common;% Multishot;% Critical Chance;% Heat;
 riven_1430953;Vectis;Crita-ignicon;199;D;> 1 day;Common;% Damage to Grineer;% Heat;% Critical Chance;% Damage to Infested
 riven_1424095;Vectis;Critaton;200;C-;> 1 day;Common;% Impact;% Critical Chance;;% Status Duration
 riven_1424175;Vectis;Acri-satidex;200;C;> 1 day;Common;% Critical Damage;% Status Chance;% Multishot;
@@ -34,11 +33,13 @@ riven_1427012;Vectis;Argitis;500;D;> 1 day;Common;% Damage to Grineer;% Critical
 riven_1427890;Vectis;Magna-lexidra;500;F;> 1 day;Common;% Impact;% Fire Rate;Punch Through;% Weapon Recoil
 riven_1428055;Vectis;Vexicron;500;C-;> 1 day;Common;% Critical Chance;% Electricity;;% Status Chance
 riven_1430533;Vectis;Crita-acricon;500;B-;> 1 day;Common;% Critical Chance;% Critical Damage;% Damage to Grineer;
-riven_1432032;Vectis;Satiata;500;C+;new;Common;% Damage;% Multishot;;% Fire Rate
+riven_1432032;Vectis;Satiata;500;C+;> 1 day;Common;% Damage;% Multishot;;% Fire Rate
 riven_1432212;Vectis;Critadex;500;B;new;Common;% Status Chance;% Critical Chance;;% Magazine Capacity
 riven_1433127;Vectis;Satitis;500;B-;new;Common;% Critical Damage;% Multishot;;% Zoom
 riven_1433181;Vectis;Satitis;500;C+;new;Common;% Multishot;% Critical Damage;;% Damage to Corpus
 riven_1433208;Vectis;Critacan;500;B-;new;Common;% Critical Chance;% Multishot;;% Status Duration
+riven_1433495;Vectis;Acri-hexaata;500;C-;new;Common;% Critical Damage;% Status Chance;% Damage;% Slash
+riven_1433510;Vectis;Visi-saticon;500;C-;new;Common;% Multishot;% Damage;% Damage to Grineer;
 riven_1433198;Vectis;Visitio;525;C;new;Common;% Damage;% Electricity;;% Magazine Capacity
 riven_1425578;Vectis;Acriata;550;B-;> 1 day;Common;% Critical Damage;% Damage;;% Impact
 riven_1430532;Vectis;Saticron;600;B+;> 1 day;Common;% Critical Chance;% Multishot;;% Ammo Maximum
@@ -64,9 +65,9 @@ riven_1428393;Vectis;Sci-satipha;900;D;> 1 day;Common;% Heat;% Slash;% Multishot
 riven_1430403;Vectis;Critadra;900;B-;> 1 day;Common;% Fire Rate;% Critical Chance;;% Magazine Capacity
 riven_1431673;Vectis;Visi-acrican;900;B-;> 1 day;Common;% Multishot;% Critical Damage;% Damage;% Fire Rate
 riven_1424508;Vectis;Sati-critado;998;C;> 1 day;Common;% Multishot;% Critical Chance;% Cold;% Status Duration
+riven_1430478;Vectis;Satitis;999;B-;> 1 day;Common;% Critical Damage;% Multishot;;% Zoom
 riven_1425356;Vectis;Acricron;1000;B-;> 1 day;Common;% Critical Damage;% Critical Chance;;% Damage to Grineer
 riven_1428481;Vectis;Acri-satipha;1000;C-;> 1 day;Common;% Heat;% Critical Damage;% Multishot;% Impact
-riven_1432083;Vectis;Satitis;1000;B+;new;Common;% Multishot;% Critical Damage;;% Magazine Capacity
 riven_1432840;Vectis;Igni-scican;1000;D;new;Common;% Heat;% Slash;% Multishot;% Ammo Maximum
 riven_1427580;Vectis;Crita-hexatis;1095;B-;> 1 day;Common;% Critical Chance;% Critical Damage;% Status Chance;% Impact
 riven_1432365;Vectis;Sci-critapha;1199;C+;new;Common;% Slash;% Heat;% Critical Chance;% Magazine Capacity
@@ -77,13 +78,14 @@ riven_1424235;Vectis;Acri-satiata;1500;B-;> 1 day;Common;% Critical Damage;% Dam
 riven_1427344;Vectis;Sati-acripha;1500;C;> 1 day;Common;% Multishot;% Critical Damage;% Heat;% Damage to Infested
 riven_1428479;Vectis;Crita-satisus;1500;C+;> 1 day;Common;% Critical Chance;% Slash;% Multishot;% Impact
 riven_1430782;Vectis;Acri-hexacan;1500;B-;> 1 day;Common;% Critical Damage;% Status Chance;% Multishot;% Magazine Capacity
-riven_1430478;Vectis;Satitis;1599;B-;> 1 day;Common;% Critical Damage;% Multishot;;% Zoom
+riven_1433460;Vectis;Satitis;1500;B+;new;Common;% Critical Damage;% Multishot;;% Magazine Capacity
 riven_1429035;Vectis;Crita-vexitak;1600;C-;> 1 day;Common;% Electricity;% Reload Speed;% Critical Chance;% Impact
 riven_1430547;Vectis;Sati-ignicron;1700;C+;> 1 day;Common;% Critical Chance;% Multishot;% Heat;% Weapon Recoil
 riven_1427493;Vectis;Feva-vexicron;1750;C-;> 1 day;Common;% Reload Speed;% Electricity;% Critical Chance;% Impact
 riven_1426388;Vectis;Crita-acrilis;1800;B-;> 1 day;Common;% Critical Damage;% Critical Chance;% Zoom;
-riven_1426280;Vectis;Acri-hexacron;2000;B-;> 1 day;Common;% Critical Chance;% Critical Damage;% Status Chance;
+riven_1426280;Vectis;Acri-hexacron;2000;Buff Popularity;> 1 day;Common;% Critical Chance;% Critical Damage;% Status Chance;
 riven_1429103;Vectis;Critatis;2000;B;> 1 day;Common;% Critical Chance;% Critical Damage;;% Status Duration
+riven_1433380;Vectis;Acri-visitox;2000;B-;new;Common;Toxin;% Critical Damage;% Damage;% Magazine Capacity
 riven_1424740;Vectis;Sati-fevacron;2150;B-;> 1 day;Common;% Critical Chance;% Multishot;% Reload Speed;% Zoom
 riven_1431199;Vectis;Acricron;2200;A-;> 1 day;Common;% Critical Chance;% Critical Damage;;% Ammo Maximum
 riven_1432370;Vectis;Crita-magnacan;2250;B;new;Common;% Critical Chance;% Multishot;% Impact;% Magazine Capacity
@@ -99,7 +101,7 @@ riven_1427177;Vectis;Acricron;3650;A;> 1 day;Common;% Critical Chance;% Critical
 riven_1424629;Vectis;Visi-critado;4000;B+;> 1 day;Common;% Damage;% Cold;% Critical Chance;% Magazine Capacity
 riven_1425206;Vectis;Crita-vexitak;4000;C+;> 1 day;Common;% Critical Chance;% Electricity;% Reload Speed;% Magazine Capacity
 riven_1426946;Vectis;Crita-acrimag;5900;B+;> 1 day;Common;% Critical Chance;% Critical Damage;% Weapon Recoil;% Magazine Capacity
-riven_1424972;Vectis;Crita-zetitis;5950;Buff Popularity;> 1 day;Common;% Critical Damage;% Weapon Recoil;% Critical Chance;% Magazine Capacity
+riven_1424972;Vectis;Crita-zetitis;5950;B+;> 1 day;Common;% Critical Damage;% Weapon Recoil;% Critical Chance;% Magazine Capacity
 riven_1432672;Vectis;Feva-acricron;6000;B+;new;Common;% Critical Chance;% Critical Damage;% Reload Speed;% Magazine Capacity
 riven_1433160;Vectis;Vexi-critaata;6000;B+;new;Common;% Damage;% Electricity;% Critical Chance;% Magazine Capacity
 riven_1427315;Vectis;Acri-critacan;6500;B;> 1 day;Common;% Critical Chance;% Critical Damage;% Multishot;% Damage to Corpus

@@ -77,9 +77,12 @@ class Rivenmarket:
             else:
                 stat += "_o"
         # BUG: semlar nie ma takiej staty jak dmg w Plague Kripath
-        if "_" in wepname and stat == "Damage":
+        if wepname == "Plague_Kripath" and stat == "Damage":
             stat = "Error"
-            error = "Error: weapon name with space + Damage"
+            error = "Error: Plague Kripath + Damage"
+        if wepname == "Redeemer" and stat == "Damage":
+            stat = "Error"
+            error = "Error: Redeemer + Damage"
         return {
                    "": "",
                    "Damage": "% Damage",
@@ -126,5 +129,6 @@ class Rivenmarket:
             "Kuva_Chakkhurr": "Kuva Chakkhurr",
             "Plague_Kripath": "Plague Kripath",
             "Reaper_Prime": "Reaper Prime",
+            "Arca_Plasmor": "Arca Plasmor"
             # TODO: wszystkie bronie
         }.get(wepname, wepname)
