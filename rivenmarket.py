@@ -77,7 +77,7 @@ class Rivenmarket:
             else:
                 stat += "_o"
         # BUG: semlar nie ma takiej staty jak dmg w Plague Kripath
-        if ("_" in wepname) and stat == "Damage":
+        if "_" in wepname and stat == "Damage":
             stat = "Error"
             error = "Error: weapon name with space + Damage"
         return {

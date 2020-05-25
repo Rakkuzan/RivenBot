@@ -1,30 +1,31 @@
 import multiprocessing
+import copy
 from datetime import timedelta
 from time import time
 from playsound import playsound
-from BotFunctions import weaponslist1, weaponslist2, runSemlar
+from BotFunctions import runSemlar
 from rivenmarket import Rivenmarket
+from weapons import weaponslist1, weaponslist2
 
+headless = True
+max_processes = 6
+weapons = weaponslist2()
 
 def main():
     start_time = time()
-    weapons = weaponslist2()
-    headless = True
+    pool = multiprocessing.Pool(max_processes)
 
     rmkt = Rivenmarket(headless)
-    processes = []
+    argslist = []
     for weapon in weapons:
         print("---Scanning " + weapon + "---")
         rmkt.loadWeapon(weapon)
         filename = weapon + ".csv"
-        processes.append(multiprocessing.Process(target=runSemlar, args=(headless, rmkt.modlist, filename,)))
+        args = [headless, copy.deepcopy(rmkt.modlist), filename]
+        argslist.append(args)
     rmkt.quit()
 
-    for process in processes:
-        process.start()
-
-    for process in processes:
-        process.join()
+    pool.map(runSemlar, [*argslist])
 
     print("---DONE---")
     playsound("sound.wav")
